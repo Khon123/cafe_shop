@@ -1,6 +1,3 @@
-<?php
-
-?>
 @extends('backpack::layout')
 
 @section('header')
@@ -77,6 +74,8 @@
     <script>
 
         var url = '{{ url('admin/product') }}';
+
+//        ==================click add new product========
         $('#new-product').click(function () {
             $('#frmProduct').trigger('reset');
             $('#imageDisplay').attr('src', '');
@@ -84,8 +83,9 @@
             $('#modal-product').modal('show');
             $('#cat_id').val(0);
         });
-        $(document).on('click', '.open-modal', function () {
 
+//        ==============click edit product==========
+        $(document).on('click', '.open-modal', function () {
             var id = $(this).val();
             $('#save').text('{{ config('constant.update') }}');
 
@@ -98,8 +98,48 @@
                 $('#modal-product').modal('show');
             });
         });
+
+//        ================ save product===========
+
+//        $('#save').click(function () {
+
+            $('#frmProduct').submit(function (e) {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                    }
+                });
+                e.preventDefault();
+
+                var state = $(this).text;
+                var type = 'POST';
+                var formData = new FormData(this);
+                var myUrl = url;
+
+                $.ajax({
+                    url: myUrl,
+                    type: type,
+                    data: formData,
+                    async: false,
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("Error:", data);
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            });
+//        });
     </script>
 
+
+
+
+
+    {{--display image when choose image--}}
     <script type="text/javascript">
         function readURL(input) {
             if (input.files && input.files[0]) {

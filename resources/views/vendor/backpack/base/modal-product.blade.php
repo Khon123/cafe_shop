@@ -10,7 +10,8 @@
             </div>
             <div class="modal-body">
                 {{--=============--}}
-                <form class="form-horizontal" id="frmProduct">
+                <form class="form-horizontal" id="frmProduct" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="form-group">
@@ -44,18 +45,18 @@
                                     <img class="form-control" id="imageDisplay" src="" alt="" style="width: 120px; height: 120px;"/>
                                 </div>
                                 <div class="col-xs-9 col-xs-offset-3">
-                                    <input type='file' onchange="readURL(this);" class="form-control"/>
+                                    <input type='file' onchange="readURL(this);" class="form-control" id="image" name="image"/>
                                 </div>
-
                             </div>
 
                         </div>
                     </div>
+                    <button class="btn btn-default" id="save" type="submit">{{ config('constant.save') }}</button>
                 </form>
                 {{--=============--}}
             </div>
             <div class="modal-footer">
-                <button class="btn btn-default" id="save">{{ config('constant.save') }}</button>
+                {{--<button class="btn btn-default" id="save" type="submit">{{ config('constant.save') }}</button>--}}
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>

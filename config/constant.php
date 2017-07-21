@@ -23,7 +23,14 @@ return [
     'action'       => 'សកម្មភាព',
     'status'       => 'ស្ថានភាព',
     'save'         => 'រក្សាទុក',
-    'update'       => 'កែរប្រែ'
+    'update'       => 'កែរប្រែ',
+    'name'         => 'ឈ្មោះ',
+    'quantity'     => 'ចំនួន',
+    'exclude'      => 'ដក',
+
+
+
+    'save_and_print_invoice'
 
 
 

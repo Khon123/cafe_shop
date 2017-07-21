@@ -18,23 +18,27 @@
         <div class="col-xs-12">
             <div class="row">
                 <div class="col-xs-4">
-                    <table class="table table-responsive">
-                        <tr>
-                            <th><b>Invoice</b></th>
-                        </tr>
-                        <tr>
-                            <td>Detail</td>
-                            <td>qty</td>
-                            <td>price</td>
-                            <td>total</td>
-                            <td>cancel</td>
-                        </tr>
+                    <table class="table table-responsive table-bordered">
+
+                        <thead>
+                            <tr>
+                                <th>{{ config('constant.product') }}</th>
+                            </tr>
+                            <tr>
+                                <th>{{ config('constant.name') }}</th>
+                                <th>{{ config('constant.quantity') }}</th>
+                                <th>{{ config('constant.price') }}</th>
+                                <th>{{ config('constant.total') }}</th>
+                                <th>{{ config('constant.exclude') }}</th>
+                            </tr>
+                        </thead>
+
                     </table>
                     <div class="row" style="margin-top: 450px;">
                         <div class="col-xs-12">
                             <div class="col-xs-6">
                                 <button class="btn btn-default">
-                                    Save & Print Invoice
+                                    {{ config('constant.save_and_print_invoice') }}
                                 </button>
                             </div>
                             <div class="col-xs-6">
@@ -77,7 +81,7 @@
                         </div>
                         <div class="col-xs-12">
                             <h3>Products</h3>
-                            <div style="height: 350px; overflow: scroll">
+                            <div style="height: 360px; overflow: scroll">
                                 <div class="col-xs-2">
                                     <a href="#"><img src="{{ asset('img/avatar') }}/avatar.png" class="img-responsive"></a>
                                     <span><h5>all</h5></span>

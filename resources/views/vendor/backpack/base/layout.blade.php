@@ -81,7 +81,7 @@
       <!-- =============================================== -->
 
       <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper" style="background: #e1f5fe">
+      <div class="content-wrapper">
         <!-- Content Header (Page header) -->
          @yield('header')
 

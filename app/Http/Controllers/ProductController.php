@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Category;
-use app\Helpers\FieldConstant;
+use App\Helpers\FieldConstant;
+use App\Helpers\ImageUploadToLocalPath;
 use App\Product;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class ProductController extends Controller
 {
@@ -51,23 +53,18 @@ class ProductController extends Controller
     {
         $product = new Product();
 
-//        $image     = $request->file('image');
-//        $path      = public_path('/img/product');
-//        $imageName = time().'.'. $image.getClientOriginalExtension();
-//        Image::make($image->getRealPath())->resize(300,300, function ($constrain){
-//            $constrain->aspectRatio();
-//        })->save($path.'/'.$imageName);
-
         $product->cat_id = $request->input(FieldConstant::CAT_ID);
         $product->name   = $request->input(FieldConstant::NAME);
         $product->price = $request->input(FieldConstant::PRICE);
 
-        if($request->file('image')!= null){
+        if($request->hasFile('image')){
 
-            $image     = $request->file('image');
-            $path      = public_path('/img/product');
+            $image = $request->file('image');
+            $path  = public_path('/img/product');
 
-            $product->image = $this->storeImage($image, $path);
+            $fileName = ImageUploadToLocalPath::storeImage($image, $path);
+
+            $product->image = $fileName;
         }
 
         $product->save();
@@ -76,16 +73,7 @@ class ProductController extends Controller
 
     }
 
-    private function storeImage($image, $path){
-        $image     = $image;
-        $imageName = time().'.'. $image.getClientOriginalExtension();
-        $path      = $path;
-        Image::make($image->getRealPath())->resize(300,300, function ($constrain){
-            $constrain->aspectRatio();
-        })->save($path.'/'.$imageName);
 
-        return $imageName;
-    }
 
     /**
      * Display the specified resource.
