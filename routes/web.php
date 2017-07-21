@@ -31,3 +31,7 @@ Route::group(['prefix' => 'admin/product'], function (){
    Route::post('/', 'ProductController@store');
    Route::post('/{id}', 'ProductController@update');
 });
+
+Route::get('admin/test', function (){
+   return view('vendor.backpack.base.test');
+});

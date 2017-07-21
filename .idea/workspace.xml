@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbc9b6aa-302a-4841-8593-8b57c8665a2d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,12 +51,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+              <folding>
+                <element signature="e#1059#1085#0#HTML" expanded="true" />
+                <element signature="e#1822#1861#0#HTML" expanded="true" />
+                <element signature="e#3736#3775#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
               <caret line="212" column="8" lean-forward="false" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3344">
+              <caret line="158" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="5" />
+              <folding>
+                <element signature="e#1059#1085#0#HTML" expanded="true" />
+                <element signature="e#1822#1861#0#HTML" expanded="true" />
+                <element signature="e#3736#3775#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,14 +149,15 @@
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/category.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-item.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/config/constant.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/menu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php" />
       </list>
     </option>
   </component>
@@ -362,6 +404,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -375,7 +431,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="modal&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/modal-product.blade.php&#10;ProductCo&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;web&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/routes/web.php&#10;layout&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/layout.blade.php&#10;side&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;menu&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/menu.blade.php&#10;Product&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;សិដេព&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;item&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/item.blade.php&#10;constant.php&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/config/constant.php&#10;Field&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php&#10;FieldCon&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php" />
+    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/routes/web.php&#10;modal&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/modal-product.blade.php&#10;ProductCo&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;layout&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/layout.blade.php&#10;side&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;menu&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/menu.blade.php&#10;Product&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;សិដេព&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;item&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/item.blade.php&#10;constant.php&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/config/constant.php&#10;Field&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php&#10;FieldCon&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php" />
   </component>
@@ -507,7 +563,7 @@
       <workItem from="1500512306614" duration="18437000" />
       <workItem from="1500535570052" duration="8061000" />
       <workItem from="1500546746032" duration="1011000" />
-      <workItem from="1500557974982" duration="5195000" />
+      <workItem from="1500557974982" duration="8204000" />
     </task>
     <task id="LOCAL-00001" summary="[new Project] cafe-shop">
       <created>1500463108894</created>
@@ -548,10 +604,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44747000" />
+    <option name="totallyTimeSpent" value="47756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -561,7 +618,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30595812" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30595812" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -592,13 +649,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Helpers/FieldConstant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -729,11 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/avatar/avatar.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -824,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
@@ -868,13 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="147" column="11" lean-forward="false" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -956,6 +986,43 @@
         <state relative-caret-position="242">
           <caret line="212" column="8" lean-forward="false" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/avatar/avatar.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3344">
+          <caret line="158" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="5" />
+          <folding>
+            <element signature="e#1059#1085#0#HTML" expanded="true" />
+            <element signature="e#1822#1861#0#HTML" expanded="true" />
+            <element signature="e#3736#3775#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <folding>
+            <element signature="e#1059#1085#0#HTML" expanded="true" />
+            <element signature="e#1822#1861#0#HTML" expanded="true" />
+            <element signature="e#3736#3775#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
