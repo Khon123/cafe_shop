@@ -16,7 +16,7 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name', 50);
-            $table->text('image');
+            $table->string('image')->default('default.jpg');
             $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->timestamps();
         });

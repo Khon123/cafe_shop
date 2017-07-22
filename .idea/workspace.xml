@@ -1,11 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc9b6aa-302a-4841-8593-8b57c8665a2d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php" />
+    <list default="true" id="dbc9b6aa-302a-4841-8593-8b57c8665a2d" name="Default" comment="[inserting] Product">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/product/default.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-category.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Helpers/ImageUploadToLocalPath.php" afterPath="$PROJECT_DIR$/app/Helpers/ImageUploadToLocalPath.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/constant.php" afterPath="$PROJECT_DIR$/config/constant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_07_19_073638_create_categories_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_07_19_073638_create_categories_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_07_19_075530_create_products_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_07_19_075530_create_products_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/build/bootstrap-less/variables.less" afterPath="$PROJECT_DIR$/public/vendor/adminlte/build/bootstrap-less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/build/less/dropdown.less" afterPath="$PROJECT_DIR$/public/vendor/adminlte/build/less/dropdown.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/documentation/build/include/components.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/documentation/build/include/components.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/documentation/index.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/documentation/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/index.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/index2.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/index2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/buttons.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/general.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/general.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/icons.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/modals.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/modals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/sliders.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/sliders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/timeline.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/UI/timeline.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/calendar.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/chartjs.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/chartjs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/flot.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/flot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/inline.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/inline.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/morris.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/charts/morris.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/404.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/500.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/blank.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/blank.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/invoice.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/invoice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/lockscreen.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/lockscreen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/pace.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/pace.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/profile.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/examples/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/forms/advanced.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/forms/advanced.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/forms/editors.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/forms/editors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/forms/general.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/forms/general.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/boxed.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/boxed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/collapsed-sidebar.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/collapsed-sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/fixed.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/fixed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/top-nav.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/layout/top-nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/mailbox/compose.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/mailbox/compose.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/mailbox/mailbox.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/mailbox/mailbox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/mailbox/read-mail.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/mailbox/read-mail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/tables/data.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/tables/data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/tables/simple.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/tables/simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/pages/widgets.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/pages/widgets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/ckeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/datatables/jquery.dataTables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/daterangepicker/moment.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/daterangepicker/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/flot/jquery.flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/fullcalendar/fullcalendar.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/fullcalendar/fullcalendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/jQueryUI/jquery-ui.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/jQueryUI/jquery-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/jQueryUI/jquery-ui.min.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/jQueryUI/jquery-ui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/select2/select2.full.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/select2/select2.full.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/select2/select2.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/select2/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/sparkline/jquery.sparkline.js" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/sparkline/jquery.sparkline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/adminlte/starter.html" afterPath="$PROJECT_DIR$/public/vendor/adminlte/starter.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-product.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-product.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/backpack/base/product.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/product.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/MatchingOnce.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/MatchingOnce.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/SeriesMatchingOnce.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/SeriesMatchingOnce.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Every.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Every.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matchers.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matchers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeDiagnosingMatcher.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeDiagnosingMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeMatcher.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInAnyOrderTest.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInAnyOrderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInOrderTest.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInOrderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/EveryTest.php" afterPath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/EveryTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/TokenGuard.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/TokenGuard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcWrapper.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcWrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ArrayStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ArrayStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Console/ForgetCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Console/ForgetCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/MemcachedStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/MemcachedStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/NullStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/NullStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RedisTaggedCache.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RedisTaggedCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/TaggedCache.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/TaggedCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Store.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Store.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Pagination/Paginator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Pagination/Paginator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Session/Session.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Session/Session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/VendorPublishCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/VendorPublishCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithFlashData.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithFlashData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithInput.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithInput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/AbstractPaginator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/AbstractPaginator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Store.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Store.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Arr.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Arr.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/NamespacedItemResolver.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/NamespacedItemResolver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/Translator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/Translator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RavenHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RavenHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Command/ListCommand.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/Command/ListCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/functions.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Psy/functions.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,18 +166,8 @@
       <file leaf-file-name="product.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/product.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
-        <entry file="phar://$PROJECT_DIR$/composer.phar/src/bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="682">
+              <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -44,8 +176,18 @@
       <file leaf-file-name="modal-product.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-product.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="1144">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constant.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/constant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -54,56 +196,18 @@
       <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-              <folding>
-                <element signature="e#1059#1085#0#HTML" expanded="true" />
-                <element signature="e#1822#1861#0#HTML" expanded="true" />
-                <element signature="e#3736#3775#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="212" column="8" lean-forward="false" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
+            <state relative-caret-position="374">
+              <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name="modal-category.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-category.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3344">
-              <caret line="158" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="5" />
-              <folding>
-                <element signature="e#1059#1085#0#HTML" expanded="true" />
-                <element signature="e#1822#1861#0#HTML" expanded="true" />
-                <element signature="e#3736#3775#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/menu.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="125" lean-forward="false" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="125" />
+            <state relative-caret-position="1188">
+              <caret line="54" column="80" lean-forward="true" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -131,7 +235,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/users/UserTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/Helpers/Role.php" />
         <option value="$PROJECT_DIR$/database/seeds/users/UserConstant.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
@@ -143,20 +246,26 @@
         <option value="$PROJECT_DIR$/config/backpack/base.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/item.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_07_19_075530_create_products_table.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/app/Product.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/category.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-item.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/menu.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
+        <option value="$PROJECT_DIR$/app/Helpers/ImageUploadToLocalPath.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" />
         <option value="$PROJECT_DIR$/config/constant.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_07_19_075530_create_products_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_07_19_073638_create_categories_table.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/product.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/menu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-category.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php" />
       </list>
     </option>
@@ -262,8 +371,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,6 +379,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.library.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cafe_shop" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -286,8 +403,8 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="composer.phar" />
-              <option name="myItemType" value="com.jetbrains.php.phar.PsiPharFileNode" />
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -300,8 +417,38 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="composer.phar" />
-              <option name="myItemType" value="com.jetbrains.php.phar.PsiPharFileNode" />
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backpack" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backpack" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
@@ -318,6 +465,70 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backpack" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backpack" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -369,24 +580,18 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backpack" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inc" />
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,7 +605,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -414,12 +623,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafe_shop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,17 +682,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/routes/web.php&#10;modal&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/modal-product.blade.php&#10;ProductCo&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;layout&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/layout.blade.php&#10;side&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;menu&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/menu.blade.php&#10;Product&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;សិដេព&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;item&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/item.blade.php&#10;constant.php&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/config/constant.php&#10;Field&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php&#10;FieldCon&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php" />
+    <property name="SearchEverywhereHistoryKey" value="cre&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/database/migrations/2017_07_19_075530_create_products_table.php&#10;pro&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/product.blade.php&#10;dash&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/DashboardController.php&#10;modal&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/modal-product.blade.php&#10;cret&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/database/migrations/2017_07_19_073638_create_categories_table.php&#10;Pro&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;web&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/routes/web.php&#10;Dash&#9;null&#9;null&#10;ProductCo&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;layout&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/layout.blade.php&#10;side&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;menu&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/menu.blade.php&#10;Product&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Http/Controllers/ProductController.php&#10;សិដេព&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/inc/sidebar.blade.php&#10;item&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/resources/views/vendor/backpack/base/item.blade.php&#10;constant.php&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/config/constant.php&#10;Field&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php&#10;FieldCon&#9;FILE&#9;file://D:/AboutWeb/Laravel/Projects/cafe_shop/app/Helpers/FieldConstant.php" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\AboutWeb\Laravel\Projects\cafe_shop\public\img\avatar" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\AboutWeb\Laravel\Projects\cafe_shop\database\seeds" />
       <recent name="D:\AboutWeb\Laravel\Projects\cafe_shop\database\seeds\users" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AboutWeb\Laravel\Projects\cafe_shop\public\img\product" />
+      <recent name="D:\AboutWeb\Laravel\Projects\cafe_shop\public\img\avatar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -563,7 +815,9 @@
       <workItem from="1500512306614" duration="18437000" />
       <workItem from="1500535570052" duration="8061000" />
       <workItem from="1500546746032" duration="1011000" />
-      <workItem from="1500557974982" duration="8204000" />
+      <workItem from="1500557974982" duration="9910000" />
+      <workItem from="1500604872555" duration="40887000" />
+      <workItem from="1500718316267" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="[new Project] cafe-shop">
       <created>1500463108894</created>
@@ -600,17 +854,24 @@
       <option name="project" value="LOCAL" />
       <updated>1500545382982</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[update] dashboard">
+      <created>1500602726839</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1500602726839</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47756000" />
+    <option name="totallyTimeSpent" value="90393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -642,173 +903,15 @@
     <MESSAGE value="[new Project] cafe-shop" />
     <MESSAGE value="[create] product template" />
     <MESSAGE value="[add] gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] gitignore" />
+    <MESSAGE value="[update] dashboard" />
+    <MESSAGE value="[inserting] Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="[inserting] Product" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="31" column="74" lean-forward="false" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/backpack/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="72" column="6" lean-forward="false" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2134">
-          <caret line="97" column="59" lean-forward="false" selection-start-line="97" selection-start-column="59" selection-end-line="97" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/FieldConstant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="31" column="74" lean-forward="false" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/backpack/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="72" column="6" lean-forward="false" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2134">
-          <caret line="97" column="59" lean-forward="false" selection-start-line="97" selection-start-column="59" selection-end-line="97" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/FieldConstant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/users/UserConstant.php" />
-    <entry file="file://$PROJECT_DIR$/app/Helpers/Role.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -823,33 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/FieldConstant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_07_19_075530_create_products_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_07_19_073638_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="85" lean-forward="false" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,32 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/constant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -890,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1254">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,23 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-product.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/product.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,23 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="125" lean-forward="false" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="212" column="8" lean-forward="false" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,27 +1018,219 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/test.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3344">
-          <caret line="158" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="5" />
+        <state relative-caret-position="1430">
+          <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Helpers/FieldConstant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/product/1500620458.JPG" />
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="602" column="17" lean-forward="true" selection-start-line="602" selection-start-column="17" selection-end-line="602" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/backpack/base/src/app/Http/Controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/category/buger.jpg" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="122" column="52" lean-forward="false" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="52" />
           <folding>
-            <element signature="e#1059#1085#0#HTML" expanded="true" />
-            <element signature="e#1822#1861#0#HTML" expanded="true" />
-            <element signature="e#3736#3775#0#HTML" expanded="true" />
+            <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/product/1500691021.jpg" />
+    <entry file="file://$PROJECT_DIR$/public/img/product/1500690983.png" />
+    <entry file="file://$PROJECT_DIR$/public/img/product/1500690679.png" />
+    <entry file="file://$PROJECT_DIR$/public/img/product/1500690113.jpg" />
+    <entry file="file://$PROJECT_DIR$/public/img/product/1500691166.jpg" />
+    <entry file="file://$PROJECT_DIR$/public/img/product/1500630219.png" />
+    <entry file="file://$PROJECT_DIR$/app/Helpers/ImageUploadToLocalPath.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="104819" lean-forward="true" selection-start-line="4" selection-start-column="104819" selection-end-line="4" selection-end-column="104819" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/almasaeed2010/adminlte/dist/css/AdminLTE.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="2977" column="6" lean-forward="false" selection-start-line="2977" selection-start-column="0" selection-end-line="2978" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/adminlte/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924">
+          <caret line="2262" column="1" lean-forward="false" selection-start-line="2262" selection-start-column="1" selection-end-line="2262" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/adminlte/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="4" column="116795" lean-forward="false" selection-start-line="4" selection-start-column="116795" selection-end-line="4" selection-end-column="116795" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/almasaeed2010/adminlte/dist/css/AdminLTE.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="6" column="55543" lean-forward="false" selection-start-line="6" selection-start-column="55543" selection-end-line="6" selection-end-column="55543" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/almasaeed2010/adminlte/build/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/almasaeed2010/adminlte/build/less/modal.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="54168" lean-forward="false" selection-start-line="4" selection-start-column="54168" selection-end-line="4" selection-end-column="54168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_07_19_075530_create_products_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_07_19_073638_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/constant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/9274f2ab0dfad5328b7ff957f335e8346532370c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="185" column="21" lean-forward="false" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-product.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/modal-category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="80" lean-forward="true" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/product.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding>
-            <element signature="e#1059#1085#0#HTML" expanded="true" />
-            <element signature="e#1822#1861#0#HTML" expanded="true" />
-            <element signature="e#3736#3775#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

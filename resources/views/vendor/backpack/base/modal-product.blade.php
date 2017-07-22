@@ -16,13 +16,19 @@
                         <div class="col-xs-12">
                             <div class="form-group">
                                 <label for="category" class="control-label col-xs-3">{{ config('constant.category') }}:</label>
-                                <div class="col-xs-9">
-                                    <select name="cat_id" id="cat_id" class="form-control">
-                                        @foreach($categories as $category)
-                                            <option value="{{$category->id}}">{{ $category->name }}</option>
-                                        @endforeach
-
-                                    </select>
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <select name="cat_id" id="cat_id" class="form-control"><span><button class="btn btn-default">...</button></span>
+                                                @foreach($categories as $category)
+                                                    <option value="{{$category->id}}">{{ $category->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-default" id="new-category">...</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -44,21 +50,39 @@
                                 <div class="col-xs-12 col-xs-offset-3">
                                     <img class="form-control" id="imageDisplay" src="" alt="" style="width: 120px; height: 120px;"/>
                                 </div>
-                                <div class="col-xs-9 col-xs-offset-3">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="image" class="control-label col-xs-3">{{ config('constant.image') }}:</label>
+                                <div class="col-xs-9">
                                     <input type='file' onchange="readURL(this);" class="form-control" id="image" name="image"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="status" class="control-label col-xs-3">{{ config('constant.status') }}:</label>
+                                <div class="col-xs-9">
+                                    <select name="status" id="status" class="form-control">
+                                        <option value="Active">Active</option>
+                                        <option value="Inactive">Inactive</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-4 col-xs-offset-3">
+                                    <button class="btn btn-default" id="save" type="submit" value="0">{{ config('constant.save') }}</button>
+                                    <button type="button" class="btn btn-default pull-right " data-dismiss="modal">Close</button>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <button class="btn btn-default" id="save" type="submit">{{ config('constant.save') }}</button>
                 </form>
                 {{--=============--}}
             </div>
-            <div class="modal-footer">
+            {{--<div class="modal-footer">--}}
                 {{--<button class="btn btn-default" id="save" type="submit">{{ config('constant.save') }}</button>--}}
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+                {{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}}
+            {{--</div>--}}
         </div>
 
     </div>

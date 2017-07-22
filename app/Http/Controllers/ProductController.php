@@ -7,7 +7,6 @@ use App\Helpers\FieldConstant;
 use App\Helpers\ImageUploadToLocalPath;
 use App\Product;
 use Illuminate\Http\Request;
-use Intervention\Image\Facades\Image;
 
 class ProductController extends Controller
 {
@@ -56,6 +55,7 @@ class ProductController extends Controller
         $product->cat_id = $request->input(FieldConstant::CAT_ID);
         $product->name   = $request->input(FieldConstant::NAME);
         $product->price = $request->input(FieldConstant::PRICE);
+        $product->status = $request->input(FieldConstant::STATUS);
 
         if($request->hasFile('image')){
 
@@ -69,7 +69,7 @@ class ProductController extends Controller
 
         $product->save();
 
-        return response()->json(['product' => $product], 200);
+        return response()->json($product, 200);
 
     }
 
@@ -112,14 +112,22 @@ class ProductController extends Controller
 
         $product->cat_id = $request->input(FieldConstant::CAT_ID);
         $product->name   = $request->input(FieldConstant::NAME);
-        $product->price  = $request->input(FieldConstant::PRICE);
+        $product->price = $request->input(FieldConstant::PRICE);
+        $product->status = $request->input(FieldConstant::STATUS);
 
-        if($request->file('image')!= null){
+        if($request->hasFile('image')){
 
-            $image       = $request->file('image');
-            $path        = public_path('/img/product');
-            $product->image = $this->storeImage($image, $path);
+            $image = $request->file('image');
+            $path  = public_path('/img/product');
+
+            $fileName = ImageUploadToLocalPath::storeImage($image, $path);
+
+            $product->image = $fileName;
         }
+
+        $product->save();
+
+        return response()->json($product, 200);
     }
 
     /**

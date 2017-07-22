@@ -27,6 +27,12 @@ return [
     'name'         => 'ឈ្មោះ',
     'quantity'     => 'ចំនួន',
     'exclude'      => 'ដក',
+    'image'        => 'រូបភាព',
+    'list'         => 'តារាង',
+    'other'        => 'ដ៏ទៃទៀត',
+    'active'       => 'សកម្ម',
+    'inactive'     => 'អសកម្ម',
+
 
 
 

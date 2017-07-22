@@ -17,9 +17,7 @@ class ImageUploadToLocalPath
         $image     = $image;
         $imageName = time().'.'. $image->getClientOriginalExtension();
         $path      = $path;
-        Image::make($image->getRealPath())->resize(300,300, function ($constrain){
-            $constrain->aspectRatio();
-        })->save($path.'/'.$imageName);
+        Image::make($image->getRealPath())->save($path.'/'.$imageName);
 
         return $imageName;
     }

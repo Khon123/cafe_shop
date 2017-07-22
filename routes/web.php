@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin/category'], function(){
 
 Route::group(['prefix' => 'admin/product'], function (){
    Route::get('/', 'ProductController@index');
-   Route::get('/{id?}', 'ProductController@edit');
+   Route::get('/{id}', 'ProductController@edit');
    Route::post('/', 'ProductController@store');
    Route::post('/{id}', 'ProductController@update');
 });
@@ -35,3 +35,8 @@ Route::group(['prefix' => 'admin/product'], function (){
 Route::get('admin/test', function (){
    return view('vendor.backpack.base.test');
 });
+
+//Route Dashboard
+
+Route::get('admin/dashboard', 'DashboardController@index');
+Route::get('admin/dashboard/{cat_id}', 'DashboardController@getProducts');

@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->integer('cat_id')->unsigned();
             $table->string('name', 50);
             $table->float('price');
-            $table->text('image');
+            $table->string('image')->default('default.jpg');
             $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->timestamps();
         });

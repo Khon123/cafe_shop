@@ -45,13 +45,13 @@
                         <?php $id= 1; ?>
                         @foreach($products as $row)
                             <tr id="product{{$row->id}}">
-                                <td class="text-center">{{ $id }}</td>
+                                <td class="text-center" id="col-id{{$row->id}}">{{ $id }}</td>
                                 <td class="text-center">{{ $row->category->name }}</td>
                                 <td class="text-center">{{ $row->name }}</td>
                                 <td class="text-center">{{ $row->price }}</td>
                                 <td class="text-center">{{ $row->status }}</td>
                                 <td class="text-center">
-                                    <button class="edit_data btn btn-info open-modal" id="edit-modal" value="{{$row->id}}">
+                                    <button class="edit_data open-modal" id="edit-modal" value="{{$row->id}}">
                                         <span class="glyphicon glyphicon-edit"></span>
                                     </button>
                                 </td>
@@ -67,6 +67,7 @@
         </div>
     </div>
     @include('vendor.backpack.base.modal-product')
+    @include('vendor.backpack.base.modal-category')
     <meta name="_token" content="{!! csrf_token() !!}" />
 @endsection
 
@@ -84,9 +85,17 @@
             $('#cat_id').val(0);
         });
 
+//        ============click add new category=========
+        $('#new-category').click(function (e) {
+            e.preventDefault();
+            $('#modal-category').modal('show');
+        });
+
 //        ==============click edit product==========
         $(document).on('click', '.open-modal', function () {
             var id = $(this).val();
+            console.log(id);
+            $('#save').val($(this).val());
             $('#save').text('{{ config('constant.update') }}');
 
 
@@ -94,47 +103,76 @@
                 $('#cat_id').val(data.cat_id);
                 $('#name').val(data.name);
                 $('#price').val(data.price);
-                $('#imageDisplay').attr('scr', 'img/');
+                $('#imageDisplay').attr('scr', 'img/product'+'/'+data.image);
                 $('#modal-product').modal('show');
             });
         });
 
 //        ================ save product===========
 
-//        $('#save').click(function () {
-
-            $('#frmProduct').submit(function (e) {
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
-                    }
-                });
-                e.preventDefault();
-
-                var state = $(this).text;
-                var type = 'POST';
-                var formData = new FormData(this);
-                var myUrl = url;
-
-                $.ajax({
-                    url: myUrl,
-                    type: type,
-                    data: formData,
-                    async: false,
-                    success: function (data) {
-                        console.log(data);
-                    },
-                    error: function (data) {
-                        console.log("Error:", data);
-                    },
-                    cache: false,
-                    contentType: false,
-                    processData: false
-                });
+        $('#frmProduct').submit(function (e) {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                }
             });
-//        });
-    </script>
+            e.preventDefault();
 
+            var id = $('#save').val();
+            var state = $('#save').text();
+            console.log(state);
+            var type = 'POST';
+            var formData = new FormData(this);
+            console.log(formData);
+            var myUrl = url;
+            if(state!='{{ config('constant.save') }}'){
+                myUrl = myUrl+'/'+id;
+            }
+
+            $.ajax({
+                url: myUrl,
+                type: type,
+                data: formData,
+                async: false,
+                success: function (data) {
+                    console.log(data);
+                    if(state!='{{ config('constant.save') }}'){
+                        var col_id = $('#col-id'+id).text();
+                        var replace_row = '<tr id="product'+ data.id +'">';
+                        replace_row+='<td class="text-center" id="col-id'+ data.id +'">'+ col_id +'</td>';
+                        replace_row+='<td class="text-center">'+$('#cat_id option:selected').text()+'</td>';
+                        replace_row+='<td class="text-center">'+ data.name +'</td>';
+                        replace_row+='<td class="text-center">'+ data.price +'</td>';
+                        replace_row+='<td class="text-center">'+ data.status +'</td>';
+                        replace_row+='<td class="text-center"><button class="edit_data open-modal" id="edit-modal" value="'+ data.id +'"> <span class="glyphicon glyphicon-edit"></span> </button> </td> </tr>';
+
+                        $('#product'+ id).replaceWith(replace_row);
+                    }else {
+                        var new_row = '<tr id="product'+ data.id +'">';
+                        new_row+='<td class="text-center" id="col-id'+ data.id +'">'+ data.id +'</td>';
+                        new_row+='<td class="text-center">'+$('#cat_id option:selected').text()+'</td>';
+                        new_row+='<td class="text-center">'+ data.name +'</td>';
+                        new_row+='<td class="text-center">'+ data.price +'</td>';
+                        new_row+='<td class="text-center">'+ data.status +'</td>';
+                        new_row+='<td class="text-center"><button class="edit_data open-modal" id="edit-modal" value="'+ data.id +'"> <span class="glyphicon glyphicon-edit"></span> </button> </td> </tr>';
+
+                        $('#product-table').append(new_row);
+                    }
+
+                    $('#modal-product').modal('hide');
+
+
+                },
+                error: function (data) {
+                    console.log("Error:", data);
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
+        });
+
+    </script>
 
 
 
