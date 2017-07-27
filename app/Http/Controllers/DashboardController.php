@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Product;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
@@ -22,11 +24,22 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $this->data['title'] = 'Dashboard';
+        $this->data['title'] = 'Selling';
 
 
-        $this->data['products'] = Product::select('products.id', 'products.cat_id', 'products.name', 'products.image', 'products.price', 'products.status')->orderBy('id', 'desc')->get();
-        $this->data['categories'] = Category::select('id', 'name', 'image', 'status')->orderBy('id', 'desc')->get();
+        $this->data['products'] = Product::select('products.id', 'products.cat_id', 'products.name', 'products.image', 'products.price', 'products.status')
+            ->where('status', '=', config('constant.active'))
+            ->get();
+
+        $this->data['productLists'] = Product::select('id', 'cat_id', 'name', 'price', 'status')
+            ->get();
+
+        $this->data['categories'] = Category::select('id', 'name', 'image', 'status')
+            ->where('status', '=', config('constant.active'))
+            ->get();
+
+        $this->data['user'] = Auth::user()->name;
+
         return view('vendor.backpack.base.dashboard', $this->data);
     }
 
@@ -71,9 +84,18 @@ class DashboardController extends Controller
     public function getProducts($cat_id)
     {
         $products = Product::select('id', 'cat_id', 'name', 'price', 'image', 'status')
-            ->where('cat_id', '=', $cat_id)->get();
+            ->where([['cat_id', '=', $cat_id], ['status', '=', config('constant.active')]])->get();
 
         return response()->json($products, 201);
+    }
+
+    /**
+     * getAll product
+     */
+    public function getAllProduct(){
+
+        $products = Product::where('status', '=', config('constant.active'))->get();
+        return response()->json($products, 200);
     }
 
     /**

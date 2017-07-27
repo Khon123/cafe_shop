@@ -22,7 +22,7 @@ class ApcWrapper
     }
 
     /**
-     * Get an item from the cache.
+     * Get an product from the cache.
      *
      * @param  string  $key
      * @return mixed
@@ -33,7 +33,7 @@ class ApcWrapper
     }
 
     /**
-     * Store an item in the cache.
+     * Store an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -46,7 +46,7 @@ class ApcWrapper
     }
 
     /**
-     * Increment the value of an item in the cache.
+     * Increment the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -58,7 +58,7 @@ class ApcWrapper
     }
 
     /**
-     * Decrement the value of an item in the cache.
+     * Decrement the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -70,7 +70,7 @@ class ApcWrapper
     }
 
     /**
-     * Remove an item from the cache.
+     * Remove an product from the cache.
      *
      * @param  string  $key
      * @return bool

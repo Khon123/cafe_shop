@@ -22,7 +22,7 @@ abstract class TypeSafeDiagnosingMatcher extends TypeSafeMatcher
     // -- Protected Methods
 
     /**
-     * Subclasses should implement these. The item will already have been checked for
+     * Subclasses should implement these. The product will already have been checked for
      * the specific type.
      */
     abstract protected function matchesSafelyWithDiagnosticDescription($item, Description $mismatchDescription);

@@ -5196,7 +5196,7 @@ var TimeGrid = Grid.extend({
 	dayEls: null, // cells elements in the day-row background
 	slatEls: null, // elements running horizontally across all columns
 
-	slatTops: null, // an array of top positions, relative to the container. last item holds bottom of last slot
+	slatTops: null, // an array of top positions, relative to the container. last product holds bottom of last slot
 
 	helperEl: null, // cell skeleton element for rendering the mock event "helper"
 
@@ -5495,7 +5495,7 @@ var TimeGrid = Grid.extend({
 
 
 	// Queries each `slatEl` for its position relative to the grid's container and stores it in `slatTops`.
-	// Includes the the bottom of the last slat as the last item in the array.
+	// Includes the the bottom of the last slat as the last product in the array.
 	computeSlatTops: function() {
 		var tops = [];
 		var top;
@@ -8528,7 +8528,7 @@ function EventManager(options) { // assumed to be a calendar
 				}
 			}
 			else {
-				events.push(abstractEvent); // return the original event. will be a one-item array
+				events.push(abstractEvent); // return the original event. will be a one-product array
 			}
 		}
 

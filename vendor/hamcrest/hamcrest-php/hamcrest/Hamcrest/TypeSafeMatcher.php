@@ -59,12 +59,12 @@ abstract class TypeSafeMatcher extends BaseMatcher
     // -- Protected Methods
 
     /**
-     * The item will already have been checked for the specific type and subtype.
+     * The product will already have been checked for the specific type and subtype.
      */
     abstract protected function matchesSafely($item);
 
     /**
-     * The item will already have been checked for the specific type and subtype.
+     * The product will already have been checked for the specific type and subtype.
      */
     abstract protected function describeMismatchSafely($item, Description $mismatchDescription);
 

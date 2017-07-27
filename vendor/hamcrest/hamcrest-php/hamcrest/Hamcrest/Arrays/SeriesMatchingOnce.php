@@ -32,7 +32,7 @@ class SeriesMatchingOnce
     {
         if (!empty($this->_elementMatchers)) {
             $nextMatcher = current($this->_elementMatchers);
-            $this->_mismatchDescription->appendText('No item matched: ')->appendDescriptionOf($nextMatcher);
+            $this->_mismatchDescription->appendText('No product matched: ')->appendDescriptionOf($nextMatcher);
 
             return false;
         }
@@ -69,7 +69,7 @@ class SeriesMatchingOnce
 
     private function _describeMismatch(Matcher $matcher, $item)
     {
-        $this->_mismatchDescription->appendText('item with key ' . $this->_nextMatchKey . ': ');
+        $this->_mismatchDescription->appendText('product with key ' . $this->_nextMatchKey . ': ');
         $matcher->describeMismatch($item, $this->_mismatchDescription);
     }
 }

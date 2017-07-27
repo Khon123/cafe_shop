@@ -55,7 +55,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Determine if an item exists in the cache.
+     * Determine if an product exists in the cache.
      *
      * @param  string  $key
      * @return bool
@@ -66,7 +66,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Retrieve an item from the cache by key.
+     * Retrieve an product from the cache by key.
      *
      * @param  string  $key
      * @param  mixed   $default
@@ -141,7 +141,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Retrieve an item from the cache and delete it.
+     * Retrieve an product from the cache and delete it.
      *
      * @param  string  $key
      * @param  mixed   $default
@@ -155,7 +155,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Store an item in the cache.
+     * Store an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -194,7 +194,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Store an item in the cache if the key does not exist.
+     * Store an product in the cache if the key does not exist.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -229,7 +229,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Increment the value of an item in the cache.
+     * Increment the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed  $value
@@ -241,7 +241,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Decrement the value of an item in the cache.
+     * Decrement the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed  $value
@@ -253,7 +253,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Store an item in the cache indefinitely.
+     * Store an product in the cache indefinitely.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -267,7 +267,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Get an item from the cache, or store the default value.
+     * Get an product from the cache, or store the default value.
      *
      * @param  string  $key
      * @param  \DateTime|float|int  $minutes
@@ -278,7 +278,7 @@ class Repository implements CacheContract, ArrayAccess
     {
         $value = $this->get($key);
 
-        // If the item exists in the cache we will just return this immediately and if
+        // If the product exists in the cache we will just return this immediately and if
         // not we will execute the given Closure and cache the result of that for a
         // given number of minutes so it's available for all subsequent requests.
         if (! is_null($value)) {
@@ -291,7 +291,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Get an item from the cache, or store the default value forever.
+     * Get an product from the cache, or store the default value forever.
      *
      * @param  string   $key
      * @param  \Closure  $callback
@@ -303,7 +303,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Get an item from the cache, or store the default value forever.
+     * Get an product from the cache, or store the default value forever.
      *
      * @param  string   $key
      * @param  \Closure  $callback
@@ -313,7 +313,7 @@ class Repository implements CacheContract, ArrayAccess
     {
         $value = $this->get($key);
 
-        // If the item exists in the cache we will just return this immediately and if
+        // If the product exists in the cache we will just return this immediately and if
         // not we will execute the given Closure and cache the result of that for a
         // given number of minutes so it's available for all subsequent requests.
         if (! is_null($value)) {
@@ -326,7 +326,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Remove an item from the cache.
+     * Remove an product from the cache.
      *
      * @param  string  $key
      * @return bool
@@ -362,7 +362,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Format the key for a cache item.
+     * Format the key for a cache product.
      *
      * @param  string  $key
      * @return string
@@ -441,7 +441,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Retrieve an item from the cache by key.
+     * Retrieve an product from the cache by key.
      *
      * @param  string  $key
      * @return mixed
@@ -452,7 +452,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Store an item in the cache for the default time.
+     * Store an product in the cache for the default time.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -464,7 +464,7 @@ class Repository implements CacheContract, ArrayAccess
     }
 
     /**
-     * Remove an item from the cache.
+     * Remove an product from the cache.
      *
      * @param  string  $key
      * @return void

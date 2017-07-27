@@ -47,7 +47,7 @@ trait BuildsQueries
     }
 
     /**
-     * Execute a callback over each item while chunking.
+     * Execute a callback over each product while chunking.
      *
      * @param  callable  $callback
      * @param  int  $count

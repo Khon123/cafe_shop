@@ -5,7 +5,7 @@ namespace Illuminate\Http\Concerns;
 trait InteractsWithFlashData
 {
     /**
-     * Retrieve an old input item.
+     * Retrieve an old input product.
      *
      * @param  string  $key
      * @param  string|array|null  $default

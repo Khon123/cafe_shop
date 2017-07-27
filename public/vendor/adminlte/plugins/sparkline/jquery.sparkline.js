@@ -1153,7 +1153,7 @@
         },
 
         /**
-         * Highlight an item based on the moused-over x,y co-ordinate
+         * Highlight an product based on the moused-over x,y co-ordinate
          */
         setRegionHighlight: function (el, x, y) {
             var currentRegion = this.currentRegion,
@@ -1177,7 +1177,7 @@
         },
 
         /**
-         * Reset any currently highlighted item
+         * Reset any currently highlighted product
          */
         clearRegionHighlight: function () {
             if (this.currentRegion !== undefined) {

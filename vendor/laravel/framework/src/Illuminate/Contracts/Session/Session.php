@@ -64,7 +64,7 @@ interface Session
     public function has($key);
 
     /**
-     * Get an item from the session.
+     * Get an product from the session.
      *
      * @param  string  $key
      * @param  mixed  $default
@@ -89,7 +89,7 @@ interface Session
     public function token();
 
     /**
-     * Remove an item from the session, returning its value.
+     * Remove an product from the session, returning its value.
      *
      * @param  string  $key
      * @return mixed

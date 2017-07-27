@@ -60,7 +60,7 @@ class DatabaseStore implements Store
     }
 
     /**
-     * Retrieve an item from the cache by key.
+     * Retrieve an product from the cache by key.
      *
      * @param  string|array  $key
      * @return mixed
@@ -81,7 +81,7 @@ class DatabaseStore implements Store
         $cache = is_array($cache) ? (object) $cache : $cache;
 
         // If this cache expiration date is past the current time, we will remove this
-        // item from the cache. Then we will return a null value since the cache is
+        // product from the cache. Then we will return a null value since the cache is
         // expired. We will use "Carbon" to make this comparison with the column.
         if (Carbon::now()->getTimestamp() >= $cache->expiration) {
             $this->forget($key);
@@ -93,7 +93,7 @@ class DatabaseStore implements Store
     }
 
     /**
-     * Store an item in the cache for a given number of minutes.
+     * Store an product in the cache for a given number of minutes.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -119,7 +119,7 @@ class DatabaseStore implements Store
     }
 
     /**
-     * Increment the value of an item in the cache.
+     * Increment the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -133,7 +133,7 @@ class DatabaseStore implements Store
     }
 
     /**
-     * Decrement the value of an item in the cache.
+     * Decrement the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -147,7 +147,7 @@ class DatabaseStore implements Store
     }
 
     /**
-     * Increment or decrement an item in the cache.
+     * Increment or decrement an product in the cache.
      *
      * @param  string  $key
      * @param  mixed  $value
@@ -204,7 +204,7 @@ class DatabaseStore implements Store
     }
 
     /**
-     * Store an item in the cache indefinitely.
+     * Store an product in the cache indefinitely.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -216,7 +216,7 @@ class DatabaseStore implements Store
     }
 
     /**
-     * Remove an item from the cache.
+     * Remove an product from the cache.
      *
      * @param  string  $key
      * @return bool

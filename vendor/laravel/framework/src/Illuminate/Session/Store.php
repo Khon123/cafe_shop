@@ -193,7 +193,7 @@ class Store implements Session
     }
 
     /**
-     * Get an item from the session.
+     * Get an product from the session.
      *
      * @param  string  $key
      * @param  mixed  $default
@@ -230,7 +230,7 @@ class Store implements Session
     }
 
     /**
-     * Get the requested item from the flashed input array.
+     * Get the requested product from the flashed input array.
      *
      * @param  string  $key
      * @param  mixed   $default
@@ -271,7 +271,7 @@ class Store implements Session
     }
 
     /**
-     * Get an item from the session, or store the default value.
+     * Get an product from the session, or store the default value.
      *
      * @param  string  $key
      * @param  \Closure  $callback
@@ -305,7 +305,7 @@ class Store implements Session
     }
 
     /**
-     * Increment the value of an item in the session.
+     * Increment the value of an product in the session.
      *
      * @param  string  $key
      * @param  int  $amount
@@ -319,7 +319,7 @@ class Store implements Session
     }
 
     /**
-     * Decrement the value of an item in the session.
+     * Decrement the value of an product in the session.
      *
      * @param  string  $key
      * @param  int  $amount
@@ -421,7 +421,7 @@ class Store implements Session
     }
 
     /**
-     * Remove an item from the session, returning its value.
+     * Remove an product from the session, returning its value.
      *
      * @param  string  $key
      * @return mixed

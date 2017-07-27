@@ -193,7 +193,7 @@ class ConnectionFactory
     }
 
     /**
-     * Parse the hosts configuration item into an array.
+     * Parse the hosts configuration product into an array.
      *
      * @param  array  $config
      * @return array

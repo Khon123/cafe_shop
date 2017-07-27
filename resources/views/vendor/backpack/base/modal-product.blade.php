@@ -21,7 +21,7 @@
                                         <div class="col-xs-10">
                                             <select name="cat_id" id="cat_id" class="form-control"><span><button class="btn btn-default">...</button></span>
                                                 @foreach($categories as $category)
-                                                    <option value="{{$category->id}}">{{ $category->name }}</option>
+                                                    <option value="{{$category->id}}" id="select_category{{ $category->id }}">{{ $category->name }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -62,8 +62,8 @@
                                 <label for="status" class="control-label col-xs-3">{{ config('constant.status') }}:</label>
                                 <div class="col-xs-9">
                                     <select name="status" id="status" class="form-control">
-                                        <option value="Active">Active</option>
-                                        <option value="Inactive">Inactive</option>
+                                        <option value="{{ config('constant.active') }}">{{ config('constant.active') }}</option>
+                                        <option value="{{ config('constant.inactive') }}">{{ config('constant.inactive') }}</option>
                                     </select>
                                 </div>
                             </div>

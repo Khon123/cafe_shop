@@ -24,7 +24,7 @@ class Matchers
     }
 
     /**
-     * Evaluates to true if any item in an array satisfies the given matcher.
+     * Evaluates to true if any product in an array satisfies the given matcher.
      *
      * @param mixed $item as a {@link Hamcrest\Matcher} or a value.
      *
@@ -36,7 +36,7 @@ class Matchers
     }
 
     /**
-     * Evaluates to true if any item in an array satisfies the given matcher.
+     * Evaluates to true if any product in an array satisfies the given matcher.
      *
      * @param mixed $item as a {@link Hamcrest\Matcher} or a value.
      *
@@ -240,7 +240,7 @@ class Matchers
      *   A matcher to apply to every element in an array.
      *
      * @return \Hamcrest\Core\Every
-     *   Evaluates to TRUE for a collection in which every item matches $itemMatcher
+     *   Evaluates to TRUE for a collection in which every product matches $itemMatcher
      */
     public static function everyItem(\Hamcrest\Matcher $itemMatcher)
     {

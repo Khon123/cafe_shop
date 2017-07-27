@@ -11,7 +11,7 @@
         <button class="btn" style="margin-top: 7px;" onclick="toggleFullScreen()"><span class="glyphicon glyphicon-fullscreen" id="fullScreen"></span></button>
 
 
-        <h4 id="date_time" class="pull-bottom col-xs-pull-1" style="color: ghostwhite"></h4>
+        <h4 id="date_time" class="pull-bottom col-xs-pull-2" style="color: ghostwhite"></h4>
     </ul>
 </div>
 
@@ -27,7 +27,7 @@
         @if (Auth::guest())
             <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/login') }}">{{ trans('backpack::base.login') }}</a></li>
         @else
-            <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/logout') }}"><i class="fa fa-btn fa-sign-out"></i> {{ trans('backpack::base.logout') }}</a></li>
+            <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/logout') }}"><i class="fa fa-btn fa-sign-out"></i> {{ config('constant.logout') }}</a></li>
         @endif
 
        <!-- ========== End of top menu right items ========== -->

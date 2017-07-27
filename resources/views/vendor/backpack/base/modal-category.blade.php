@@ -16,16 +16,26 @@
                             <table class="table table-bordered table-responsive">
                                 <thead>
                                 <tr>
-                                    <th>{{ config('constant.id') }}</th>
-                                    <th>{{ config('constant.name') }}</th>
-                                    <th>{{ config('constant.status') }}</th>
-                                    <th>{{ config('constant.action') }}</th>
+                                    <th class="text-center">{{ config('constant.id') }}</th>
+                                    <th class="text-center">{{ config('constant.name') }}</th>
+                                    <th class="text-center">{{ config('constant.status') }}</th>
+                                    <th class="text-center">{{ config('constant.action') }}</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                <tr style="height: 400px; overflow: scroll">
+                                <tbody id="category-table">
+                                @foreach($categories as $category)
+                                    <tr id="category{{ $category->id }}">
+                                        <td class="text-center">{{ $category->id }}</td>
+                                        <td class="text-center">{{ $category->name }}</td>
+                                        <td class="text-center">{{ $category->status }}</td>
+                                        <td class="text-center">
+                                            <button class="edit_category" id="edit-modal" value="{{$category->id}}">
+                                                <span class="glyphicon glyphicon-edit"></span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                @endforeach
 
-                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -36,7 +46,7 @@
                                 <div class="form-group">
                                     <label for="name" class="control-label col-xs-3">{{ config('constant.name') }}</label>
                                     <div class="col-xs-9">
-                                        <input type="text" class="form-control" name="name" id="name">
+                                        <input type="text" class="form-control" name="name_category" id="name_category">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -50,36 +60,21 @@
                                     <div class="col-xs-9">
                                         <input type='file' onchange="readURLImageCategory(this);" class="form-control" id="image" name="image"/>
                                     </div>
-                                    <script>
-                                        function readURLImageCategory(input) {
-                                            if (input.files && input.files[0]) {
-                                                var reader = new FileReader();
 
-                                                reader.onload = function (e) {
-                                                    $('#imageCategoryDisplay')
-                                                        .attr('src', e.target.result)
-                                                        .width(100)
-                                                        .height(100);
-                                                };
-
-                                                reader.readAsDataURL(input.files[0]);
-                                            }
-                                        }
-                                    </script>
                                 </div>
                                 <div class="form-group">
                                     <label for="status" class="control-label col-xs-3">{{ config('constant.status') }}:</label>
                                     <div class="col-xs-9">
-                                        <select name="status" id="status" class="form-control">
-                                            <option value="Active">{{ config('constant.active') }}</option>
-                                            <option value="Inactive">{{ config('constant.inactive') }}</option>
+                                        <select name="status_category" id="status_category" class="form-control">
+                                            <option value="{{ config('constant.active') }}">{{ config('constant.active') }}</option>
+                                            <option value="{{ config('constant.inactive') }}">{{ config('constant.inactive') }}</option>
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="col-xs-4 col-xs-offset-3">
-                                        <button class="btn btn-default" id="save" type="submit" value="0">{{ config('constant.save') }}</button>
+                                        <button class="btn btn-default" id="saveCategory" type="submit" value="0">{{ config('constant.save') }}</button>
                                     </div>
                                 </div>
 
@@ -96,3 +91,20 @@
 
     </div>
 </div>
+<!--display image-->
+<script>
+    function readURLImageCategory(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#imageCategoryDisplay')
+                    .attr('src', e.target.result)
+                    .width(100)
+                    .height(100);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>

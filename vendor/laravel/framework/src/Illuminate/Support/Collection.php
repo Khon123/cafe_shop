@@ -182,7 +182,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Determine if an item exists in the collection.
+     * Determine if an product exists in the collection.
      *
      * @param  mixed  $key
      * @param  mixed  $operator
@@ -209,7 +209,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Determine if an item exists in the collection using strict comparison.
+     * Determine if an product exists in the collection using strict comparison.
      *
      * @param  mixed  $key
      * @param  mixed  $value
@@ -277,7 +277,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Execute a callback over each item.
+     * Execute a callback over each product.
      *
      * @param  callable  $callback
      * @return $this
@@ -516,7 +516,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Get the first item from the collection.
+     * Get the first product from the collection.
      *
      * @param  callable|null  $callback
      * @param  mixed  $default
@@ -549,7 +549,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Remove an item from the collection by key.
+     * Remove an product from the collection by key.
      *
      * @param  string|array  $keys
      * @return $this
@@ -564,7 +564,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Get an item from the collection by key.
+     * Get an product from the collection by key.
      *
      * @param  mixed  $key
      * @param  mixed  $default
@@ -639,7 +639,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Determine if an item exists in the collection by key.
+     * Determine if an product exists in the collection by key.
      *
      * @param  mixed  $key
      * @return bool
@@ -731,7 +731,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Get the last item from the collection.
+     * Get the last product from the collection.
      *
      * @param  callable|null  $callback
      * @param  mixed  $default
@@ -990,7 +990,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Get and remove the last item from the collection.
+     * Get and remove the last product from the collection.
      *
      * @return mixed
      */
@@ -1000,7 +1000,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Push an item onto the beginning of the collection.
+     * Push an product onto the beginning of the collection.
      *
      * @param  mixed  $value
      * @param  mixed  $key
@@ -1014,7 +1014,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Push an item onto the end of the collection.
+     * Push an product onto the end of the collection.
      *
      * @param  mixed  $value
      * @return $this
@@ -1044,7 +1044,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Get and remove an item from the collection.
+     * Get and remove an product from the collection.
      *
      * @param  mixed  $key
      * @param  mixed  $default
@@ -1056,7 +1056,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Put an item in the collection by key.
+     * Put an product in the collection by key.
      *
      * @param  mixed  $key
      * @param  mixed  $value
@@ -1156,7 +1156,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Get and remove the first item from the collection.
+     * Get and remove the first product from the collection.
      *
      * @return mixed
      */
@@ -1239,7 +1239,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Sort through each item with a callback.
+     * Sort through each product with a callback.
      *
      * @param  callable|null  $callback
      * @return static
@@ -1366,7 +1366,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Transform each item in the collection using a callback.
+     * Transform each product in the collection using a callback.
      *
      * @param  callable  $callback
      * @return $this
@@ -1549,7 +1549,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Determine if an item exists at an offset.
+     * Determine if an product exists at an offset.
      *
      * @param  mixed  $key
      * @return bool
@@ -1560,7 +1560,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Get an item at a given offset.
+     * Get an product at a given offset.
      *
      * @param  mixed  $key
      * @return mixed
@@ -1571,7 +1571,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Set the item at a given offset.
+     * Set the product at a given offset.
      *
      * @param  mixed  $key
      * @param  mixed  $value
@@ -1587,7 +1587,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Unset the item at a given offset.
+     * Unset the product at a given offset.
      *
      * @param  string  $key
      * @return void

@@ -1385,7 +1385,7 @@
 					data = data[ a[i] ];
 				}
 	
-				// Last item in the input - i.e, the actual set
+				// Last product in the input - i.e, the actual set
 				if ( aLast.match(__reFn ) )
 				{
 					// Function call
@@ -7154,11 +7154,11 @@
 			var ret = val.apply( this, arguments );
 	
 			if ( ret === this ) {
-				// Returned item is the API instance that was passed in, return it
+				// Returned product is the API instance that was passed in, return it
 				return this;
 			}
 			else if ( ret instanceof _Api ) {
-				// New API instance returned, want the value from the first item
+				// New API instance returned, want the value from the first product
 				// in the returned array for the singular result.
 				return ret.length ?
 					$.isArray( ret[0] ) ?
@@ -7595,10 +7595,10 @@
 	
 	var _selector_first = function ( inst )
 	{
-		// Reduce the API instance to the first item found
+		// Reduce the API instance to the first product found
 		for ( var i=0, ien=inst.length ; i<ien ; i++ ) {
 			if ( inst[i].length > 0 ) {
-				// Assign the first element to the first item in the instance
+				// Assign the first element to the first product in the instance
 				// and truncate the instance and context
 				inst[0] = inst[i];
 				inst[0].length = 1;
@@ -13657,9 +13657,9 @@
 		 *
 		 * * Settings object for the host table
 		 * * Options object (`selector-modifier` object type)
-		 * * Array of selected item indexes
+		 * * Array of selected product indexes
 		 *
-		 * The return is an array of the resulting item indexes after the custom
+		 * The return is an array of the resulting product indexes after the custom
 		 * selector has been applied.
 		 *
 		 *  @type object

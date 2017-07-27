@@ -18,7 +18,7 @@ class RedisTaggedCache extends TaggedCache
     const REFERENCE_KEY_STANDARD = 'standard_ref';
 
     /**
-     * Store an item in the cache.
+     * Store an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -33,7 +33,7 @@ class RedisTaggedCache extends TaggedCache
     }
 
     /**
-     * Store an item in the cache indefinitely.
+     * Store an product in the cache indefinitely.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -136,7 +136,7 @@ class RedisTaggedCache extends TaggedCache
     }
 
     /**
-     * Delete item keys that have been stored against a reference.
+     * Delete product keys that have been stored against a reference.
      *
      * @param  string  $referenceKey
      * @return void

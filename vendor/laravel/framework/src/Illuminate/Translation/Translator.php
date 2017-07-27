@@ -352,7 +352,7 @@ class Translator extends NamespacedItemResolver implements TranslatorContract
     }
 
     /**
-     * Parse a key into namespace, group, and item.
+     * Parse a key into namespace, group, and product.
      *
      * @param  string  $key
      * @return array

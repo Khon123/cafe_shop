@@ -19,7 +19,7 @@ class ForgetCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Remove an item from the cache';
+    protected $description = 'Remove an product from the cache';
 
     /**
      * The cache manager instance.

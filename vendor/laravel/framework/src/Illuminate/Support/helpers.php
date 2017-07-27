@@ -9,7 +9,7 @@ use Illuminate\Support\HigherOrderTapProxy;
 
 if (! function_exists('append_config')) {
     /**
-     * Assign high numeric IDs to a config item to force appending.
+     * Assign high numeric IDs to a config product to force appending.
      *
      * @param  array  $array
      * @return array
@@ -144,7 +144,7 @@ if (! function_exists('array_forget')) {
 
 if (! function_exists('array_get')) {
     /**
-     * Get an item from an array using "dot" notation.
+     * Get an product from an array using "dot" notation.
      *
      * @param  \ArrayAccess|array  $array
      * @param  string  $key
@@ -159,7 +159,7 @@ if (! function_exists('array_get')) {
 
 if (! function_exists('array_has')) {
     /**
-     * Check if an item or items exist in an array using "dot" notation.
+     * Check if an product or items exist in an array using "dot" notation.
      *
      * @param  \ArrayAccess|array  $array
      * @param  string|array  $keys
@@ -217,7 +217,7 @@ if (! function_exists('array_pluck')) {
 
 if (! function_exists('array_prepend')) {
     /**
-     * Push an item onto the beginning of an array.
+     * Push an product onto the beginning of an array.
      *
      * @param  array  $array
      * @param  mixed  $value
@@ -261,7 +261,7 @@ if (! function_exists('array_random')) {
 
 if (! function_exists('array_set')) {
     /**
-     * Set an array item to a given value using "dot" notation.
+     * Set an array product to a given value using "dot" notation.
      *
      * If no key is given to the method, the entire array will be replaced.
      *
@@ -411,7 +411,7 @@ if (! function_exists('data_fill')) {
 
 if (! function_exists('data_get')) {
     /**
-     * Get an item from an array or object using "dot" notation.
+     * Get an product from an array or object using "dot" notation.
      *
      * @param  mixed   $target
      * @param  string|array  $key
@@ -454,7 +454,7 @@ if (! function_exists('data_get')) {
 
 if (! function_exists('data_set')) {
     /**
-     * Set an item on an array or object using dot notation.
+     * Set an product on an array or object using dot notation.
      *
      * @param  mixed  $target
      * @param  string|array  $key
@@ -642,7 +642,7 @@ if (! function_exists('last')) {
 
 if (! function_exists('object_get')) {
     /**
-     * Get an item from an object using "dot" notation.
+     * Get an product from an object using "dot" notation.
      *
      * @param  object  $object
      * @param  string  $key

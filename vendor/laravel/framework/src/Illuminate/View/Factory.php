@@ -519,7 +519,7 @@ class Factory implements FactoryContract
     }
 
     /**
-     * Get an item from the shared data.
+     * Get an product from the shared data.
      *
      * @param  string  $key
      * @param  mixed   $default

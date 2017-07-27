@@ -17,7 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->string('name', 50);
             $table->string('image')->default('default.jpg');
-            $table->enum('status', ['Active', 'Inactive'])->default('Active');
+            $table->enum('status', [config('constant.active'), config('constant.inactive')])->default(config('constant.active'));
             $table->timestamps();
         });
     }

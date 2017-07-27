@@ -10,7 +10,7 @@ use Hamcrest\TypeSafeMatcher;
 use Hamcrest\Util;
 
 /**
- * Matches if an array contains an item satisfying a nested matcher.
+ * Matches if an array contains an product satisfying a nested matcher.
  */
 class IsArrayContaining extends TypeSafeMatcher
 {
@@ -49,7 +49,7 @@ class IsArrayContaining extends TypeSafeMatcher
     }
 
     /**
-     * Evaluates to true if any item in an array satisfies the given matcher.
+     * Evaluates to true if any product in an array satisfies the given matcher.
      *
      * @param mixed $item as a {@link Hamcrest\Matcher} or a value.
      *

@@ -16,7 +16,7 @@ class ArrayStore extends TaggableStore implements Store
     protected $storage = [];
 
     /**
-     * Retrieve an item from the cache by key.
+     * Retrieve an product from the cache by key.
      *
      * @param  string|array  $key
      * @return mixed
@@ -29,7 +29,7 @@ class ArrayStore extends TaggableStore implements Store
     }
 
     /**
-     * Store an item in the cache for a given number of minutes.
+     * Store an product in the cache for a given number of minutes.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -42,7 +42,7 @@ class ArrayStore extends TaggableStore implements Store
     }
 
     /**
-     * Increment the value of an item in the cache.
+     * Increment the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -57,7 +57,7 @@ class ArrayStore extends TaggableStore implements Store
     }
 
     /**
-     * Decrement the value of an item in the cache.
+     * Decrement the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -69,7 +69,7 @@ class ArrayStore extends TaggableStore implements Store
     }
 
     /**
-     * Store an item in the cache indefinitely.
+     * Store an product in the cache indefinitely.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -81,7 +81,7 @@ class ArrayStore extends TaggableStore implements Store
     }
 
     /**
-     * Remove an item from the cache.
+     * Remove an product from the cache.
      *
      * @param  string  $key
      * @return bool

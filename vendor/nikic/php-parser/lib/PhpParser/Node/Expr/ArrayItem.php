@@ -14,7 +14,7 @@ class ArrayItem extends Expr
     public $byRef;
 
     /**
-     * Constructs an array item node.
+     * Constructs an array product node.
      *
      * @param Expr      $value      Value
      * @param null|Expr $key        Key

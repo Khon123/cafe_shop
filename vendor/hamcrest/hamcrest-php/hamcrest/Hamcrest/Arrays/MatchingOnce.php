@@ -31,7 +31,7 @@ class MatchingOnce
         }
 
         $this->_mismatchDescription
-                 ->appendText('No item matches: ')->appendList('', ', ', '', $this->_elementMatchers)
+                 ->appendText('No product matches: ')->appendList('', ', ', '', $this->_elementMatchers)
                  ->appendText(' in ')->appendValueList('[', ', ', ']', $items)
                  ;
 

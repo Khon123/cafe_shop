@@ -36,9 +36,9 @@ class IsArrayContainingInOrderTest extends AbstractMatcherTest
     {
         $matcher = arrayContaining(array(1, 2, 3));
         $this->assertMismatchDescription('was null', $matcher, null);
-        $this->assertMismatchDescription('No item matched: <1>', $matcher, array());
-        $this->assertMismatchDescription('No item matched: <2>', $matcher, array(1));
-        $this->assertMismatchDescription('item with key 0: was <4>', $matcher, array(4, 3, 2, 1));
-        $this->assertMismatchDescription('item with key 2: was <4>', $matcher, array(1, 2, 4));
+        $this->assertMismatchDescription('No product matched: <1>', $matcher, array());
+        $this->assertMismatchDescription('No product matched: <2>', $matcher, array(1));
+        $this->assertMismatchDescription('product with key 0: was <4>', $matcher, array(4, 3, 2, 1));
+        $this->assertMismatchDescription('product with key 2: was <4>', $matcher, array(1, 2, 4));
     }
 }

@@ -566,7 +566,7 @@ if (! function_exists('mix')) {
 
 if (! function_exists('old')) {
     /**
-     * Retrieve an old input item.
+     * Retrieve an old input product.
      *
      * @param  string  $key
      * @param  mixed   $default
@@ -628,7 +628,7 @@ if (! function_exists('redirect')) {
 
 if (! function_exists('request')) {
     /**
-     * Get an instance of the current request or an input item from the request.
+     * Get an instance of the current request or an input product from the request.
      *
      * @param  array|string  $key
      * @param  mixed   $default

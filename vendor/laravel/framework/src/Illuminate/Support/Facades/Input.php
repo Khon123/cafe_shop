@@ -8,7 +8,7 @@ namespace Illuminate\Support\Facades;
 class Input extends Facade
 {
     /**
-     * Get an item from the input data.
+     * Get an product from the input data.
      *
      * This method is used for all request verbs (GET, POST, PUT, and DELETE)
      *

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Category;
-use app\Helpers\FieldConstant;
+use App\Helpers\FieldConstant;
+use App\Helpers\ImageUploadToLocalPath;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -49,19 +50,20 @@ class CategoryController extends Controller
     {
         $category = new Category();
 
-        $image     = $request->file('image');
-        $imageName = time().'.'. $image.getClientOriginalExtension();
-        $path      = public_path('/img/category');
-        Image::make($image->getRealPath())->resize(300,300, function ($constrain){
-           $constrain->aspectRatio();
-        })->save($path.'/'.$imageName);
+        $category->name     = $request->input(FieldConstant::NAME_CATEGORY);
+        if($request->hasFile('image')){
 
-        $category->name     = $request->input(FieldConstant::NAME);
-        $category->image    = $imageName;
-        $category->status   = $request->input(FieldConstant::STATUS);
+            $image = $request->file('image');
+            $path  = public_path('/img/category');
+
+            $fileName = ImageUploadToLocalPath::storeImage($image, $path);
+
+            $category->image = $fileName;
+        }
+        $category->status   = $request->input(FieldConstant::STATUS_CATEGORY);
         $category->save();
 
-        return response()-> json(['category' => $category], 201 );
+        return response()-> json( $category, 201 );
 
     }
 
@@ -84,8 +86,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $category = Category::find('id');
-        return response()->json(['category' => $category], 201);
+        $category = Category::find($id);
+        return response()->json($category, 201);
     }
 
     /**
@@ -99,20 +101,20 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
 
-        $image     = $request->file('image');
-        $imageName = time().'.'. $image.getClientOriginalExtension();
-        $path      = public_path('/img/category');
-        Image::make($image->getRealPath())->resize(300,300, function ($constrain){
-            $constrain->aspectRatio();
-        })->save($path.'/'.$imageName);
+        $category->name     = $request->input(FieldConstant::NAME_CATEGORY);
+        if($request->hasFile('image')){
 
-        $category->name     = $request->input(FieldConstant::NAME);
-        $category->image    = $imageName;
-        $category->status   = $request->input(FieldConstant::STATUS);
+            $image = $request->file('image');
+            $path  = public_path('/img/category');
 
+            $fileName = ImageUploadToLocalPath::storeImage($image, $path);
+
+            $category->image = $fileName;
+        }
+        $category->status   = $request->input(FieldConstant::STATUS_CATEGORY);
         $category->save();
 
-        return response()->json(['category' => $category], 200);
+        return response()->json($category, 200);
     }
 
     /**

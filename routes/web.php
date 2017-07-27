@@ -32,11 +32,9 @@ Route::group(['prefix' => 'admin/product'], function (){
    Route::post('/{id}', 'ProductController@update');
 });
 
-Route::get('admin/test', function (){
-   return view('vendor.backpack.base.test');
-});
 
 //Route Dashboard
 
 Route::get('admin/dashboard', 'DashboardController@index');
 Route::get('admin/dashboard/{cat_id}', 'DashboardController@getProducts');
+Route::get('admin/dashboard/get/allProduct', 'DashboardController@getAllProduct');

@@ -30,7 +30,7 @@ class TaggedCache extends Repository
     }
 
     /**
-     * Increment the value of an item in the cache.
+     * Increment the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -42,7 +42,7 @@ class TaggedCache extends Repository
     }
 
     /**
-     * Increment the value of an item in the cache.
+     * Increment the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -72,7 +72,7 @@ class TaggedCache extends Repository
     }
 
     /**
-     * Get a fully qualified key for a tagged item.
+     * Get a fully qualified key for a tagged product.
      *
      * @param  string  $key
      * @return string

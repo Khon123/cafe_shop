@@ -91,7 +91,7 @@ class RavenHandler extends AbstractProcessingHandler
             return $highest;
         });
 
-        // the other ones are added as a context item
+        // the other ones are added as a context product
         $logs = array();
         foreach ($records as $r) {
             $logs[] = $this->processRecord($r);

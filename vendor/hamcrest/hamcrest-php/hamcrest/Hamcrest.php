@@ -41,7 +41,7 @@ if (!function_exists('anArray')) {    /**
 }
 
 if (!function_exists('hasItemInArray')) {    /**
-     * Evaluates to true if any item in an array satisfies the given matcher.
+     * Evaluates to true if any product in an array satisfies the given matcher.
      *
      * @param mixed $item as a {@link Hamcrest\Matcher} or a value.
      *
@@ -54,7 +54,7 @@ if (!function_exists('hasItemInArray')) {    /**
 }
 
 if (!function_exists('hasValue')) {    /**
-     * Evaluates to true if any item in an array satisfies the given matcher.
+     * Evaluates to true if any product in an array satisfies the given matcher.
      *
      * @param mixed $item as a {@link Hamcrest\Matcher} or a value.
      *
@@ -279,7 +279,7 @@ if (!function_exists('everyItem')) {    /**
      *   A matcher to apply to every element in an array.
      *
      * @return \Hamcrest\Core\Every
-     *   Evaluates to TRUE for a collection in which every item matches $itemMatcher
+     *   Evaluates to TRUE for a collection in which every product matches $itemMatcher
      */
     function everyItem(\Hamcrest\Matcher $itemMatcher)
     {

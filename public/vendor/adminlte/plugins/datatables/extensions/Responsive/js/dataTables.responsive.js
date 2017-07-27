@@ -677,7 +677,7 @@ Responsive.prototype = {
 
 
 /**
- * List of default breakpoints. Each item in the array is an object with two
+ * List of default breakpoints. Each product in the array is an object with two
  * properties:
  *
  * * `name` - the breakpoint name.

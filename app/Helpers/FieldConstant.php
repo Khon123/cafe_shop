@@ -22,4 +22,7 @@ class FieldConstant
     const STATUS      = 'status';
     const CAT_ID      = 'cat_id';
     const PRICE       = 'price';
+    const NAME_CATEGORY = 'name_category';
+    const STATUS_CATEGORY = 'status_category';
+
 }

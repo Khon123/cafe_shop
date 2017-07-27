@@ -14,7 +14,7 @@ class Util
 {
 
     /**
-     * Wraps the item with an IsEqual matcher if it isn't a matcher already.
+     * Wraps the product with an IsEqual matcher if it isn't a matcher already.
      *
      * @param mixed $item matcher or any value
      * @return \Hamcrest\Matcher
@@ -28,10 +28,10 @@ class Util
     }
 
     /**
-     * Throws an exception if any item in $matchers is not a Hamcrest\Matcher.
+     * Throws an exception if any product in $matchers is not a Hamcrest\Matcher.
      *
      * @param array $matchers expected to contain only matchers
-     * @throws \InvalidArgumentException if any item is not a matcher
+     * @throws \InvalidArgumentException if any product is not a matcher
      */
     public static function checkAllAreMatchers(array $matchers)
     {
@@ -45,8 +45,8 @@ class Util
     }
 
     /**
-     * Returns a copy of $items where each non-Matcher item is replaced by
-     * a Hamcrest\Core\IsEqual matcher for the item. If the first and only item
+     * Returns a copy of $items where each non-Matcher product is replaced by
+     * a Hamcrest\Core\IsEqual matcher for the product. If the first and only product
      * is an array, it is used as the $items array to support the old style
      * of passing an array as the sole argument to a matcher.
      *
@@ -55,7 +55,7 @@ class Util
      */
     public static function createMatcherArray(array $items)
     {
-        //Extract single array item
+        //Extract single array product
         if (count($items) == 1 && is_array($items[0])) {
             $items = $items[0];
         }

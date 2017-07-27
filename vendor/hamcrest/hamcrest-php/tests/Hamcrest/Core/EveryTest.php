@@ -23,8 +23,8 @@ class EveryTest extends \Hamcrest\AbstractMatcherTest
     public function testDescribesItself()
     {
         $each = everyItem(containsString('a'));
-        $this->assertEquals('every item is a string containing "a"', (string) $each);
+        $this->assertEquals('every product is a string containing "a"', (string) $each);
 
-        $this->assertMismatchDescription('an item was "BbB"', $each, array('BbB'));
+        $this->assertMismatchDescription('an product was "BbB"', $each, array('BbB'));
     }
 }

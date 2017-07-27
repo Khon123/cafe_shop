@@ -5170,7 +5170,7 @@ wysihtml5.dom.convertToList = (function() {
       }
 
       if (isLineBreak) {
-        // Only create a new list item in the next iteration when the current one has already content
+        // Only create a new list product in the next iteration when the current one has already content
         currentListItem = currentListItem.firstChild ? null : currentListItem;
         continue;
       }

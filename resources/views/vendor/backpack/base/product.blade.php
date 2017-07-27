@@ -1,5 +1,10 @@
 @extends('backpack::layout')
 
+@section('after_styles')
+    <style>
+
+    </style>
+@endsection
 @section('header')
     <section class="content-header">
         <h1>{{ config('constant.product') }}</h1>
@@ -23,9 +28,6 @@
                             {{ config('constant.new_product') }}
                         </button>
 
-                        <button class="btn btn-default">
-                            {{ config('constant.new_category') }}
-                        </button>
 
                     </div>
                 </div>
@@ -42,10 +44,10 @@
                         </tr>
                         </thead>
                         <tbody id="product-table" name="product-table">
-                        <?php $id= 1; ?>
+
                         @foreach($products as $row)
                             <tr id="product{{$row->id}}">
-                                <td class="text-center" id="col-id{{$row->id}}">{{ $id }}</td>
+                                <td class="text-center" id="col-id{{$row->id}}">{{ $row->id }}</td>
                                 <td class="text-center">{{ $row->category->name }}</td>
                                 <td class="text-center">{{ $row->name }}</td>
                                 <td class="text-center">{{ $row->price }}</td>
@@ -56,7 +58,7 @@
                                     </button>
                                 </td>
                             </tr>
-                            <?php $id++; ?>
+
                         @endforeach
                         </tbody>
                     </table>
@@ -88,7 +90,10 @@
 //        ============click add new category=========
         $('#new-category').click(function (e) {
             e.preventDefault();
+            $('#saveCategory').text('{{config('constant.save')}}');
             $('#modal-category').modal('show');
+            $('#frmCategory').trigger('reset');
+            $('#imageCategoryDisplay').attr('src', '');
         });
 
 //        ==============click edit product==========
@@ -97,13 +102,13 @@
             console.log(id);
             $('#save').val($(this).val());
             $('#save').text('{{ config('constant.update') }}');
-
-
             $.get(url+'/'+id, function (data) {
                 $('#cat_id').val(data.cat_id);
                 $('#name').val(data.name);
                 $('#price').val(data.price);
-                $('#imageDisplay').attr('scr', 'img/product'+'/'+data.image);
+                $('#imageDisplay').attr('src', '{{ asset('img/product') }}'+'/'+data.image);
+                $('#status').val(data.status);
+                console.log(data.image);
                 $('#modal-product').modal('show');
             });
         });
@@ -160,6 +165,7 @@
                     }
 
                     $('#modal-product').modal('hide');
+                    $('#frmProduct').trigger('reset');
 
 
                 },
@@ -172,9 +178,85 @@
             });
         });
 
+        //==========click save category=========
+        $('#frmCategory').submit(function (e) {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                }
+            });
+            e.preventDefault();
+            var id = $('#saveCategory').val();
+            var state = $('#saveCategory').text();
+            console.log(id);
+            var type= 'POST';
+            var formData = new FormData(this);
+            var url = '{{ url('admin/category') }}';
+            var myUrl = url;
+
+            if(state!='{{ config('constant.save') }}'){
+                myUrl = myUrl+'/'+id;
+            }
+
+            $.ajax({
+                type: type,
+                url: myUrl,
+                data: formData,
+                async: false,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if(state!='{{ config('constant.update') }}'){
+                        var new_row = '<tr id="category'+ data.id +'">';
+                        new_row+='<td class="text-center">'+ data.id +'</td>';
+                        new_row+='<td class="text-center">'+ data.name +'</td>';
+                        new_row+='<td class="text-center">'+ data.status +'</td>';
+                        new_row+='<td class="text-center"> <button class="edit_category" id="edit-modal" value="'+ data.id+'"> <span class="glyphicon glyphicon-edit"></span> </button> </td> </tr>';
+
+                        $('#category-table').append(new_row);
+                        $('#frmCategory').trigger('reset');
+                        $('#imageCategoryDisplay').attr('src', '');
+                        var new_option = '<option value="'+ data.id +'">'+ data.name +'</option>'
+                        $('#cat_id').append(new_option);
+                    }else{
+                        var replace_row = '<tr id="category'+ data.id +'">';
+                        replace_row+='<td class="text-center">'+ data.id +'</td>';
+                        replace_row+='<td class="text-center">'+ data.name +'</td>';
+                        replace_row+='<td class="text-center">'+ data.status +'</td>';
+                        replace_row+='<td class="text-center"> <button class="edit_category" id="edit-modal" value="'+ data.id+'"> <span class="glyphicon glyphicon-edit"></span> </button> </td> </tr>';
+
+                        $('#category'+ id).replaceWith(replace_row);
+                        $('#frmCategory').trigger('reset');
+                        $('#imageCategoryDisplay').attr('src', '');
+                        $('#saveCategory').text('{{ config('constant.save') }}');
+
+                        var replace_category = '<option value="'+ data.id +'" id="select_category'+ data.id +'">'+ data.name+'</option>';
+                        $('#select_category'+ id).replaceWith(replace_category);
+                    }
+                },
+                error: function (data) {
+                    console.log("Error:", data);
+                }
+            });
+        });
+
+//        ==========click edit category=======
+        var urlCategory = '{{ url('admin/category') }}';
+        $(document).on('click', '.edit_category', function () {
+            var id = $(this).val();
+            $('#saveCategory').val(id);
+
+            $('#saveCategory').text('{{ config('constant.update') }}');
+
+            $.get(urlCategory+'/'+id, function (data) {
+                $('#name_category').val(data.name);
+                $('#status_category').val(data.status);
+                $('#imageCategoryDisplay').attr('src', '{{ asset('img/category') }}'+'/'+data.image);
+            });
+        });
+
     </script>
-
-
 
 
     {{--display image when choose image--}}

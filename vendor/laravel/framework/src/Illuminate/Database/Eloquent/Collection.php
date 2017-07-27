@@ -57,7 +57,7 @@ class Collection extends BaseCollection implements QueueableCollection
     }
 
     /**
-     * Add an item to the collection.
+     * Add an product to the collection.
      *
      * @param  mixed  $item
      * @return $this

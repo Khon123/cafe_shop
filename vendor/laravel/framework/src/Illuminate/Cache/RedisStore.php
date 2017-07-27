@@ -44,7 +44,7 @@ class RedisStore extends TaggableStore implements Store
     }
 
     /**
-     * Retrieve an item from the cache by key.
+     * Retrieve an product from the cache by key.
      *
      * @param  string|array  $key
      * @return mixed
@@ -80,7 +80,7 @@ class RedisStore extends TaggableStore implements Store
     }
 
     /**
-     * Store an item in the cache for a given number of minutes.
+     * Store an product in the cache for a given number of minutes.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -113,7 +113,7 @@ class RedisStore extends TaggableStore implements Store
     }
 
     /**
-     * Store an item in the cache if the key doesn't exist.
+     * Store an product in the cache if the key doesn't exist.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -130,7 +130,7 @@ class RedisStore extends TaggableStore implements Store
     }
 
     /**
-     * Increment the value of an item in the cache.
+     * Increment the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -142,7 +142,7 @@ class RedisStore extends TaggableStore implements Store
     }
 
     /**
-     * Decrement the value of an item in the cache.
+     * Decrement the value of an product in the cache.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -154,7 +154,7 @@ class RedisStore extends TaggableStore implements Store
     }
 
     /**
-     * Store an item in the cache indefinitely.
+     * Store an product in the cache indefinitely.
      *
      * @param  string  $key
      * @param  mixed   $value
@@ -166,7 +166,7 @@ class RedisStore extends TaggableStore implements Store
     }
 
     /**
-     * Remove an item from the cache.
+     * Remove an product from the cache.
      *
      * @param  string  $key
      * @return bool

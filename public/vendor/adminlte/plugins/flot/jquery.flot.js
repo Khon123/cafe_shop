@@ -591,7 +591,7 @@ Licensed under the MIT license.
                     clickable: false,
                     hoverable: false,
                     autoHighlight: true, // highlight in case mouse is near
-                    mouseActiveRadius: 10 // how far the mouse can be away to activate an item
+                    mouseActiveRadius: 10 // how far the mouse can be away to activate an product
                 },
                 interaction: {
                     redrawOverlayInterval: 1000/60 // time between updates, -1 means in same flow
@@ -2794,7 +2794,7 @@ Licensed under the MIT license.
         var highlights = [],
             redrawTimeout = null;
 
-        // returns the data item the mouse is over, or null if none is found
+        // returns the data product the mouse is over, or null if none is found
         function findNearbyItem(mouseX, mouseY, seriesFilter) {
             var maxDistance = options.grid.mouseActiveRadius,
                 smallestDistance = maxDistance * maxDistance + 1,

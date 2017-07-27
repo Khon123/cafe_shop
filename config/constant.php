@@ -32,12 +32,15 @@ return [
     'other'        => 'ដ៏ទៃទៀត',
     'active'       => 'សកម្ម',
     'inactive'     => 'អសកម្ម',
+    'selling'      => 'ការលក់',
+    'logout'       => 'ចាកចេញ',
 
 
 
 
-    'save_and_print_invoice'
-
+    'save_and_print_invoice' => 'បង្ហាញវិក័យប័ត្រ',
+    'total_amount' => 'សរុបប្រាក់់',
+    'thanks'       => 'សូមអរគុណ, សូមអញ្ជើញមកម្ដងទៀត'
 
 
 

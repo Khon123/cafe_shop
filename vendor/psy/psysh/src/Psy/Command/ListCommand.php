@@ -189,7 +189,7 @@ HELP
     /**
      * Write the list items to $output.
      *
-     * Items are listed one per line, and include the item signature.
+     * Items are listed one per line, and include the product signature.
      *
      * @param OutputInterface $output
      * @param null|array      $result List of enumerated items
@@ -220,7 +220,7 @@ HELP
     }
 
     /**
-     * Format an item name given its visibility.
+     * Format an product name given its visibility.
      *
      * @param array $item
      *

@@ -31,7 +31,7 @@ class MySqlConnector extends Connector implements ConnectorInterface
 
         // Next, we will check to see if a timezone has been specified in this config
         // and if it has we will issue a statement to modify the timezone with the
-        // database. Setting this DB timezone is an optional configuration item.
+        // database. Setting this DB timezone is an optional configuration product.
         $this->configureTimezone($connection, $config);
 
         $this->setModes($connection, $config);

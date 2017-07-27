@@ -12,7 +12,7 @@ class NamespacedItemResolver
     protected $parsed = [];
 
     /**
-     * Parse a key into namespace, group, and item.
+     * Parse a key into namespace, group, and product.
      *
      * @param  string  $key
      * @return array
@@ -27,7 +27,7 @@ class NamespacedItemResolver
         }
 
         // If the key does not contain a double colon, it means the key is not in a
-        // namespace, and is just a regular configuration item. Namespaces are a
+        // namespace, and is just a regular configuration product. Namespaces are a
         // tool for organizing configuration items for things such as modules.
         if (strpos($key, '::') === false) {
             $segments = explode('.', $key);
@@ -53,7 +53,7 @@ class NamespacedItemResolver
     {
         // The first segment in a basic array will always be the group, so we can go
         // ahead and grab that segment. If there is only one total segment we are
-        // just pulling an entire group out of the array and not a single item.
+        // just pulling an entire group out of the array and not a single product.
         $group = $segments[0];
 
         if (count($segments) == 1) {
@@ -61,8 +61,8 @@ class NamespacedItemResolver
         }
 
         // If there is more than one segment in this group, it means we are pulling
-        // a specific item out of a group and will need to return this item name
-        // as well as the group so we know which item to pull from the arrays.
+        // a specific product out of a group and will need to return this product name
+        // as well as the group so we know which product to pull from the arrays.
         else {
             $item = implode('.', array_slice($segments, 1));
 
@@ -81,8 +81,8 @@ class NamespacedItemResolver
         list($namespace, $item) = explode('::', $key);
 
         // First we'll just explode the first segment to get the namespace and group
-        // since the item should be in the remaining segments. Once we have these
-        // two pieces of data we can proceed with parsing out the item's value.
+        // since the product should be in the remaining segments. Once we have these
+        // two pieces of data we can proceed with parsing out the product's value.
         $itemSegments = explode('.', $item);
 
         $groupAndItem = array_slice(

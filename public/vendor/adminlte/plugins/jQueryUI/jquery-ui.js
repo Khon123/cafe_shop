@@ -2204,8 +2204,8 @@ var menu = $.widget( "ui.menu", {
 						// Redirect focus to the menu
 						this.element.trigger( "focus", [ true ] );
 
-						// If the active item is on the top level, let it stay active.
-						// Otherwise, blur the active item since it is no longer visible.
+						// If the active product is on the top level, let it stay active.
+						// Otherwise, blur the active product since it is no longer visible.
 						if ( this.active && this.active.parents( ".ui-menu" ).length === 1 ) {
 							clearTimeout( this.timer );
 						}
@@ -2214,13 +2214,13 @@ var menu = $.widget( "ui.menu", {
 			},
 			"mouseenter .ui-menu-item": function( event ) {
 				// Ignore mouse events while typeahead is active, see #10458.
-				// Prevents focusing the wrong item when typeahead causes a scroll while the mouse
-				// is over an item in the menu
+				// Prevents focusing the wrong product when typeahead causes a scroll while the mouse
+				// is over an product in the menu
 				if ( this.previousFilter ) {
 					return;
 				}
 				var target = $( event.currentTarget );
-				// Remove ui-state-active class from siblings of the newly focused menu item
+				// Remove ui-state-active class from siblings of the newly focused menu product
 				// to avoid a jump caused by adjacent elements both having a class with a border
 				target.siblings( ".ui-state-active" ).removeClass( "ui-state-active" );
 				this.focus( event, target );
@@ -2228,8 +2228,8 @@ var menu = $.widget( "ui.menu", {
 			mouseleave: "collapseAll",
 			"mouseleave .ui-menu": "collapseAll",
 			focus: function( event, keepActiveItem ) {
-				// If there's already an active item, keep it active
-				// If not, activate the first item
+				// If there's already an active product, keep it active
+				// If not, activate the first product
 				var item = this.active || this.element.find( this.options.items ).eq( 0 );
 
 				if ( !keepActiveItem ) {
@@ -2355,7 +2355,7 @@ var menu = $.widget( "ui.menu", {
 				match;
 
 			// If no matches on the current filter, reset to the last character pressed
-			// to move down the menu to the first item that starts with that character
+			// to move down the menu to the first product that starts with that character
 			if ( !match.length ) {
 				character = String.fromCharCode( event.keyCode );
 				match = this._filterMenuItems( character );
@@ -2429,7 +2429,7 @@ var menu = $.widget( "ui.menu", {
 		});
 
 		// Don't refresh list items that are already adapted
-		items.not( ".ui-menu-item, .ui-menu-divider" )
+		items.not( ".ui-menu-product, .ui-menu-divider" )
 			.addClass( "ui-menu-item" )
 			.uniqueId()
 			.attr({
@@ -2437,10 +2437,10 @@ var menu = $.widget( "ui.menu", {
 				role: this._itemRole()
 			});
 
-		// Add aria-disabled attribute to any disabled menu item
+		// Add aria-disabled attribute to any disabled menu product
 		items.filter( ".ui-state-disabled" ).attr( "aria-disabled", "true" );
 
-		// If the active item has been removed, blur the menu
+		// If the active product has been removed, blur the menu
 		if ( this.active && !$.contains( this.element[ 0 ], this.active[ 0 ] ) ) {
 			this.blur();
 		}
@@ -2481,7 +2481,7 @@ var menu = $.widget( "ui.menu", {
 			this.element.attr( "aria-activedescendant", focused.attr( "id" ) );
 		}
 
-		// Highlight active parent menu item, if any
+		// Highlight active parent menu product, if any
 		this.active
 			.parent()
 			.closest( ".ui-menu-item" )
@@ -2730,9 +2730,9 @@ var menu = $.widget( "ui.menu", {
 	},
 
 	select: function( event ) {
-		// TODO: It should never be possible to not have an active item at this
+		// TODO: It should never be possible to not have an active product at this
 		// point, but the tests don't trigger mouseenter before click.
-		this.active = this.active || $( event.target ).closest( ".ui-menu-item" );
+		this.active = this.active || $( event.target ).closest( ".ui-menu-product" );
 		var ui = { item: this.active };
 		if ( !this.active.has( ".ui-menu" ).length ) {
 			this.collapseAll( event, true );
@@ -2970,7 +2970,7 @@ $.widget( "ui.autocomplete", {
 				// so we have to track the next mousedown and close the menu if
 				// the user clicks somewhere outside of the autocomplete
 				var menuElement = this.menu.element[ 0 ];
-				if ( !$( event.target ).closest( ".ui-menu-item" ).length ) {
+				if ( !$( event.target ).closest( ".ui-menu-product" ).length ) {
 					this._delay(function() {
 						var that = this;
 						this.document.one( "mousedown", function( event ) {
@@ -3000,7 +3000,7 @@ $.widget( "ui.autocomplete", {
 					}
 				}
 
-				item = ui.item.data( "ui-autocomplete-item" );
+				item = ui.item.data( "ui-autocomplete-product" );
 				if ( false !== this._trigger( "focus", event, { item: item } ) ) {
 					// use value to match what will end up in the input, if it was a key event
 					if ( event.originalEvent && /^key/.test( event.originalEvent.type ) ) {
@@ -3016,7 +3016,7 @@ $.widget( "ui.autocomplete", {
 				}
 			},
 			menuselect: function( event, ui ) {
-				var item = ui.item.data( "ui-autocomplete-item" ),
+				var item = ui.item.data( "ui-autocomplete-product" ),
 					previous = this.previous;
 
 				// only trigger when focus was lost (click on menu)
@@ -3226,7 +3226,7 @@ $.widget( "ui.autocomplete", {
 	},
 
 	_normalize: function( items ) {
-		// assume all items have the right format when the first item is complete
+		// assume all items have the right format when the first product is complete
 		if ( items.length && items[ 0 ].label && items[ 0 ].value ) {
 			return items;
 		}
@@ -3280,7 +3280,7 @@ $.widget( "ui.autocomplete", {
 	},
 
 	_renderItemData: function( ul, item ) {
-		return this._renderItem( ul, item ).data( "ui-autocomplete-item", item );
+		return this._renderItem( ul, item ).data( "ui-autocomplete-product", item );
 	},
 
 	_renderItem: function( ul, item ) {
@@ -6628,7 +6628,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 
 					sortable.currentItem = ui.helper
 						.appendTo( sortable.element )
-						.data( "ui-sortable-item", true );
+						.data( "ui-sortable-product", true );
 
 					// Store helper option to later restore it
 					sortable.options._helper = sortable.options.helper;
@@ -9223,7 +9223,7 @@ $.ui.ddmanager = {
 				continue;
 			}
 
-			// Filter out elements in the current dragged item
+			// Filter out elements in the current dragged product
 			for ( j = 0; j < list.length; j++ ) {
 				if ( list[ j ] === m[ i ].element[ 0 ] ) {
 					m[ i ].proportions().height = 0;
@@ -11955,7 +11955,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 			selectees.each(function() {
 				var $this = $(this),
 					pos = $this.offset();
-				$.data(this, "selectable-item", {
+				$.data(this, "selectable-product", {
 					element: this,
 					$element: $this,
 					left: pos.left,
@@ -11981,7 +11981,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 	_destroy: function() {
 		this.selectees
 			.removeClass("ui-selectee")
-			.removeData("selectable-item");
+			.removeData("selectable-product");
 		this.element
 			.removeClass("ui-selectable ui-selectable-disabled");
 		this._mouseDestroy();
@@ -12015,7 +12015,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 		}
 
 		this.selectees.filter(".ui-selected").each(function() {
-			var selectee = $.data(this, "selectable-item");
+			var selectee = $.data(this, "selectable-product");
 			selectee.startselected = true;
 			if (!event.metaKey && !event.ctrlKey) {
 				selectee.$element.removeClass("ui-selected");
@@ -12031,7 +12031,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 
 		$(event.target).parents().addBack().each(function() {
 			var doSelect,
-				selectee = $.data(this, "selectable-item");
+				selectee = $.data(this, "selectable-product");
 			if (selectee) {
 				doSelect = (!event.metaKey && !event.ctrlKey) || !selectee.$element.hasClass("ui-selected");
 				selectee.$element
@@ -12077,7 +12077,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 		this.helper.css({ left: x1, top: y1, width: x2 - x1, height: y2 - y1 });
 
 		this.selectees.each(function() {
-			var selectee = $.data(this, "selectable-item"),
+			var selectee = $.data(this, "selectable-product"),
 				hit = false;
 
 			//prevent helper from being selected if appendTo: selectable
@@ -12155,7 +12155,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 		this.dragged = false;
 
 		$(".ui-unselecting", this.element[0]).each(function() {
-			var selectee = $.data(this, "selectable-item");
+			var selectee = $.data(this, "selectable-product");
 			selectee.$element.removeClass("ui-unselecting");
 			selectee.unselecting = false;
 			selectee.startselected = false;
@@ -12164,7 +12164,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 			});
 		});
 		$(".ui-selecting", this.element[0]).each(function() {
-			var selectee = $.data(this, "selectable-item");
+			var selectee = $.data(this, "selectable-product");
 			selectee.$element.removeClass("ui-selecting").addClass("ui-selected");
 			selectee.selecting = false;
 			selectee.selected = true;
@@ -12314,16 +12314,16 @@ var selectmenu = $.widget( "ui.selectmenu", {
 					event.preventDefault();
 
 					// support: IE8
-					// If the item was selected via a click, the text selection
+					// If the product was selected via a click, the text selection
 					// will be destroyed in IE
 					that._setSelection();
 
-					that._select( ui.item.data( "ui-selectmenu-item" ), event );
+					that._select( ui.item.data( "ui-selectmenu-product" ), event );
 				},
 				focus: function( event, ui ) {
-					var item = ui.item.data( "ui-selectmenu-item" );
+					var item = ui.item.data( "ui-selectmenu-product" );
 
-					// Prevent inital focus from firing and check if its a newly focused item
+					// Prevent inital focus from firing and check if its a newly focused product
 					if ( that.focusIndex != null && item.index !== that.focusIndex ) {
 						that._trigger( "focus", event, { item: item } );
 						if ( !that.isOpen ) {
@@ -12383,9 +12383,9 @@ var selectmenu = $.widget( "ui.selectmenu", {
 
 		item = this._getSelectedItem();
 
-		// Update the menu to have the correct item focused
+		// Update the menu to have the correct product focused
 		this.menuInstance.focus( null, item );
-		this._setAria( item.data( "ui-selectmenu-item" ) );
+		this._setAria( item.data( "ui-selectmenu-product" ) );
 
 		// Set disabled state
 		this._setOption( "disabled", this.element.prop( "disabled" ) );
@@ -12401,7 +12401,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 			this._refreshMenu();
 		} else {
 
-			// Menu clears focus on close, reset focus to selected item
+			// Menu clears focus on close, reset focus to selected product
 			this.menu.find( ".ui-state-focus" ).removeClass( "ui-state-focus" );
 			this.menuInstance.focus( null, this._getSelectedItem() );
 		}
@@ -12465,7 +12465,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 	},
 
 	_renderItemData: function( ul, item ) {
-		return this._renderItem( ul, item ).data( "ui-selectmenu-item", item );
+		return this._renderItem( ul, item ).data( "ui-selectmenu-product", item );
 	},
 
 	_renderItem: function( ul, item ) {
@@ -12637,7 +12637,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 	_selectFocusedItem: function( event ) {
 		var item = this.menuItems.eq( this.focusIndex );
 		if ( !item.hasClass( "ui-state-disabled" ) ) {
-			this._select( item.data( "ui-selectmenu-item" ), event );
+			this._select( item.data( "ui-selectmenu-product" ), event );
 		}
 	},
 
@@ -13592,7 +13592,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 		this._mouseDestroy();
 
 		for ( var i = this.items.length - 1; i >= 0; i-- ) {
-			this.items[i].item.removeData(this.widgetName + "-item");
+			this.items[i].item.removeData(this.widgetName + "-product");
 		}
 
 		return this;
@@ -13614,14 +13614,14 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 		//We have to refresh the items data once first
 		this._refreshItems(event);
 
-		//Find out if the clicked node (or one of its parents) is a actual item in this.items
+		//Find out if the clicked node (or one of its parents) is a actual product in this.items
 		$(event.target).parents().each(function() {
-			if($.data(this, that.widgetName + "-item") === that) {
+			if($.data(this, that.widgetName + "-product") === that) {
 				currentItem = $(this);
 				return false;
 			}
 		});
-		if($.data(event.target, that.widgetName + "-item") === that) {
+		if($.data(event.target, that.widgetName + "-product") === that) {
 			currentItem = $(event.target);
 		}
 
@@ -13853,7 +13853,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 
 			// Only put the placeholder inside the current Container, skip all
 			// items from other containers. This works because when moving
-			// an item from one container to another the
+			// an product from one container to another the
 			// currentContainer is switched before the placeholder is moved.
 			//
 			// Without this, moving items in "sub-sortables" can cause
@@ -13864,7 +13864,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 
 			// cannot intersect with itself
 			// no useless actions that have been done before
-			// no action if the item moved is the parent of the item checked
+			// no action if the product moved is the parent of the product checked
 			if (itemElement !== this.currentItem[0] &&
 				this.placeholder[intersection === 1 ? "next" : "prev"]()[0] !== itemElement &&
 				!$.contains(this.placeholder[0], itemElement) &&
@@ -14139,7 +14139,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 
 	_removeCurrentsFromItems: function() {
 
-		var list = this.currentItem.find(":data(" + this.widgetName + "-item)");
+		var list = this.currentItem.find(":data(" + this.widgetName + "-product)");
 
 		this.items = $.grep(this.items, function (item) {
 			for (var j=0; j < list.length; j++) {
@@ -14182,7 +14182,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			for (j=0, queriesLength = _queries.length; j < queriesLength; j++) {
 				item = $(_queries[j]);
 
-				item.data(this.widgetName + "-item", targetData); // Data for target checking (mouse manager)
+				item.data(this.widgetName + "-product", targetData); // Data for target checking (mouse manager)
 
 				items.push({
 					item: item,
@@ -14202,7 +14202,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			this.options.axis === "x" || this._isFloating( this.items[ 0 ].item ) :
 			false;
 
-		//This has to be redone because due to the item being moved out/into the offsetParent, the offsetParent's position will change
+		//This has to be redone because due to the product being moved out/into the offsetParent, the offsetParent's position will change
 		if(this.offsetParent && this.helper) {
 			this.offset.parent = this._getParentOffset();
 		}
@@ -14284,7 +14284,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 						return;
 					}
 
-					//If the element doesn't have a actual height by itself (without styles coming from a stylesheet), it receives the inline height from the dragged item
+					//If the element doesn't have a actual height by itself (without styles coming from a stylesheet), it receives the inline height from the dragged product
 					if(!p.height()) { p.height(that.currentItem.innerHeight() - parseInt(that.currentItem.css("paddingTop")||0, 10) - parseInt(that.currentItem.css("paddingBottom")||0, 10)); }
 					if(!p.width()) { p.width(that.currentItem.innerWidth() - parseInt(that.currentItem.css("paddingLeft")||0, 10) - parseInt(that.currentItem.css("paddingRight")||0, 10)); }
 				}
@@ -14294,7 +14294,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 		//Create the placeholder
 		that.placeholder = $(o.placeholder.element.call(that.element, that.currentItem));
 
-		//Append it after the actual current item
+		//Append it after the actual current product
 		that.currentItem.after(that.placeholder);
 
 		//Update the size of the placeholder (TODO: Logic to fuzzy, see line 316/317)
@@ -14317,10 +14317,10 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			innermostContainer = null,
 			innermostIndex = null;
 
-		// get innermost container that intersects with item
+		// get innermost container that intersects with product
 		for (i = this.containers.length - 1; i >= 0; i--) {
 
-			// never consider a container that's located within the item itself
+			// never consider a container that's located within the product itself
 			if($.contains(this.currentItem[0], this.containers[i].element[0])) {
 				continue;
 			}
@@ -14350,7 +14350,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			return;
 		}
 
-		// move the item into the container if it's not there already
+		// move the product into the container if it's not there already
 		if(this.containers.length === 1) {
 			if (!this.containers[innermostIndex].containerCache.over) {
 				this.containers[innermostIndex]._trigger("over", event, this._uiHash(this));
@@ -14358,7 +14358,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			}
 		} else {
 
-			//When entering a new container, we will find the item with the least distance and append our item near it
+			//When entering a new container, we will find the product with the least distance and append our product near it
 			dist = 10000;
 			itemWithLeastDistance = null;
 			floating = innermostContainer.floating || this._isFloating(this.currentItem);
@@ -14671,7 +14671,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			delayedTriggers = [];
 
 		// We first have to update the dom position of the actual currentItem
-		// Note: don't do it if the current item is already removed (by a user), or it gets reappended (see #4088)
+		// Note: don't do it if the current product is already removed (by a user), or it gets reappended (see #4088)
 		if(!this._noFinalSort && this.currentItem.parent().length) {
 			this.placeholder.before(this.currentItem);
 		}

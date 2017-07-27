@@ -38,16 +38,16 @@ if (!function_exists('Psy\debug')) {
      *
      * For example:
      *
-     *     foreach ($items as $item) {
+     *     foreach ($items as $product) {
      *         \Psy\debug(get_defined_vars());
      *     }
      *
      * If you would like your shell interaction to affect the state of the
      * current context, you can extract() the values returned from this call:
      *
-     *     foreach ($items as $item) {
+     *     foreach ($items as $product) {
      *         extract(\Psy\debug(get_defined_vars()));
-     *         var_dump($item); // will be whatever you set $item to in Psy Shell
+     *         var_dump($product); // will be whatever you set $product to in Psy Shell
      *     }
      *
      * Optionally, supply an object as the `$boundObject` parameter. This

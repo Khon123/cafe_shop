@@ -348,7 +348,7 @@ class NormalizerFormatterTest extends \PHPUnit_Framework_TestCase
         });
 
         try {
-            // This will contain $resource and $wrappedResource as arguments in the trace item
+            // This will contain $resource and $wrappedResource as arguments in the trace product
             $resource = fopen('php://memory', 'rw+');
             fwrite($resource, 'test_resource');
             $wrappedResource = new TestFooNorm;

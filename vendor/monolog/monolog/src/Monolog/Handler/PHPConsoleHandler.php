@@ -56,7 +56,7 @@ class PHPConsoleHandler extends AbstractProcessingHandler
         'dumperDetectCallbacks' => false, // bool Convert callback items in dumper vars to (callback SomeClass::someMethod) strings
         'dumperLevelLimit' => 5, // int Maximum dumped vars array or object nested dump level
         'dumperItemsCountLimit' => 100, // int Maximum dumped var same level array items or object properties number
-        'dumperItemSizeLimit' => 5000, // int Maximum length of any string or dumped array item
+        'dumperItemSizeLimit' => 5000, // int Maximum length of any string or dumped array product
         'dumperDumpSizeLimit' => 500000, // int Maximum approximate size of dumped vars result formatted in JSON
         'detectDumpTraceAndSource' => false, // bool Autodetect and append trace data to debug
         'dataStorage' => null, // PhpConsole\Storage|null Fixes problem with custom $_SESSION handler(see http://goo.gl/Ne8juJ)

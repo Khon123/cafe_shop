@@ -25,9 +25,9 @@ class ProductController extends Controller
     {
         $this->data['title'] = 'Product';
         $select = ['products.id', 'products.cat_id', 'products.name', 'products.price', 'products.status'];
-        $this->data['products'] = Product::select($select)->orderBy('id', 'desc')->paginate(12);
+        $this->data['products'] = Product::select($select)->paginate(10);
 
-        $this->data['categories'] = Category::select('id', 'name')->orderBy('id', 'desc')->get();
+        $this->data['categories'] = Category::select('id', 'name', 'image', 'status')->get();
 
         return view('vendor.backpack.base.product', $this->data);
     }
@@ -76,10 +76,7 @@ class ProductController extends Controller
 
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * turn \Illuminate\Http\Response
      */
     public function show($id)
     {

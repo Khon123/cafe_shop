@@ -264,7 +264,7 @@ class Arr
     }
 
     /**
-     * Get an item from an array using "dot" notation.
+     * Get an product from an array using "dot" notation.
      *
      * @param  \ArrayAccess|array  $array
      * @param  string  $key
@@ -297,7 +297,7 @@ class Arr
     }
 
     /**
-     * Check if an item or items exist in an array using "dot" notation.
+     * Check if an product or items exist in an array using "dot" notation.
      *
      * @param  \ArrayAccess|array  $array
      * @param  string|array  $keys
@@ -418,7 +418,7 @@ class Arr
     }
 
     /**
-     * Push an item onto the beginning of an array.
+     * Push an product onto the beginning of an array.
      *
      * @param  array  $array
      * @param  mixed  $value
@@ -486,7 +486,7 @@ class Arr
     }
 
     /**
-     * Set an array item to a given value using "dot" notation.
+     * Set an array product to a given value using "dot" notation.
      *
      * If no key is given to the method, the entire array will be replaced.
      *

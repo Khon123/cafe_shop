@@ -3663,7 +3663,7 @@ S2.define('select2/data/tokenizer',[
         self.addOptions([$option]);
       }
 
-      // Select the item, now that we know there is an option for it
+      // Select the product, now that we know there is an option for it
       select(item);
     }
 
@@ -4393,7 +4393,7 @@ S2.define('select2/dropdown/selectOnClose',[
     if (params && params.originalSelect2Event != null) {
       var event = params.originalSelect2Event;
 
-      // Don't select an item if the close event was triggered from a select or
+      // Don't select an product if the close event was triggered from a select or
       // unselect event
       if (event._type === 'select' || event._type === 'unselect') {
         return;

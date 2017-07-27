@@ -18,7 +18,7 @@ class TokenGuard implements Guard
     protected $request;
 
     /**
-     * The name of the query string item from the request containing the API token.
+     * The name of the query string product from the request containing the API token.
      *
      * @var string
      */

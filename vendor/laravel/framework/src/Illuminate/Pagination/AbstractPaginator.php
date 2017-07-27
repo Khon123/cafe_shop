@@ -243,7 +243,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Get the number of the first item in the slice.
+     * Get the number of the first product in the slice.
      *
      * @return int
      */
@@ -253,7 +253,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Get the number of the last item in the slice.
+     * Get the number of the last product in the slice.
      *
      * @return int
      */
@@ -499,7 +499,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Determine if the given item exists.
+     * Determine if the given product exists.
      *
      * @param  mixed  $key
      * @return bool
@@ -510,7 +510,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Get the item at the given offset.
+     * Get the product at the given offset.
      *
      * @param  mixed  $key
      * @return mixed
@@ -521,7 +521,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Set the item at the given offset.
+     * Set the product at the given offset.
      *
      * @param  mixed  $key
      * @param  mixed  $value
@@ -533,7 +533,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Unset the item at the given key.
+     * Unset the product at the given key.
      *
      * @param  mixed  $key
      * @return void

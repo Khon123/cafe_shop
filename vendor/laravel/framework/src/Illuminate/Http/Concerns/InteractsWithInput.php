@@ -59,7 +59,7 @@ trait InteractsWithInput
     }
 
     /**
-     * Determine if the request contains a given input item key.
+     * Determine if the request contains a given input product key.
      *
      * @param  string|array  $key
      * @return bool
@@ -80,7 +80,7 @@ trait InteractsWithInput
     }
 
     /**
-     * Determine if the request contains a non-empty value for an input item.
+     * Determine if the request contains a non-empty value for an input product.
      *
      * @param  string|array  $key
      * @return bool
@@ -122,7 +122,7 @@ trait InteractsWithInput
     }
 
     /**
-     * Retrieve an input item from the request.
+     * Retrieve an input product from the request.
      *
      * @param  string  $key
      * @param  string|array|null  $default
@@ -185,7 +185,7 @@ trait InteractsWithInput
     }
 
     /**
-     * Retrieve a query string item from the request.
+     * Retrieve a query string product from the request.
      *
      * @param  string  $key
      * @param  string|array|null  $default
@@ -297,7 +297,7 @@ trait InteractsWithInput
     }
 
     /**
-     * Retrieve a parameter item from a given source.
+     * Retrieve a parameter product from a given source.
      *
      * @param  string  $source
      * @param  string  $key

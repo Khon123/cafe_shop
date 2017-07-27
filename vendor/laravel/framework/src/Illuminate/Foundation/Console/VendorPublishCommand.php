@@ -90,7 +90,7 @@ class VendorPublishCommand extends Command
     }
 
     /**
-     * Publish the given item from and to the given location.
+     * Publish the given product from and to the given location.
      *
      * @param  string  $from
      * @param  string  $to
